@@ -11,3 +11,7 @@ First extract casper-rw.xz, a 4gb casper-rw file will be created (this is persis
 Then install iso file using yumi in a windows environment (i have used virtualbox for that), create 4gb persistent storage and replace extracted casper-rw file with that
 
 Boot into usb and build kernels without any problem :) !
+
+For benchmarking, i am using Xonotic and The Talos Principle
+
+P.S: please see actual issue page: https://bugzilla.kernel.org/show_bug.cgi?id=201077
