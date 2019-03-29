@@ -1,0 +1,16 @@
+[utku2@utku2 linux]$ git bisect log
+# bad: [320b164abb32db876866a4ff8c2cb710524ac6ea] Merge tag 
+'drm-for-v4.17' of git://people.freedesktop.org/~airlied/linux
+# good: [0adb32858b0bddf4ada5f364a84ed60b196dbcda] Linux 4.16
+git bisect start '320b164abb32db876866a4ff8c2cb710524ac6ea' 
+'0adb32858b0bddf4ada5f364a84ed60b196dbcda' '--' 'drivers/gpu/drm/amd'
+# good: [9021d2edd259d992cf8b5b48791ab50829129de7] drm/amdgpu: mitigate 
+workaround for i915
+git bisect good 9021d2edd259d992cf8b5b48791ab50829129de7
+# bad: [aa5a5777304228819a52562d346bc3eb1b4873fa] drm/amd/display: 
+Vari-bright looks disabled near end of MM14
+git bisect bad aa5a5777304228819a52562d346bc3eb1b4873fa
+# good: [81988f9c3d9907d7df0ea97e8e4842064b88b7b8] drm/amdgpu: use 
+separate status for buffer funcs availability v2
+git bisect good 81988f9c3d9907d7df0ea97e8e4842064b88b7b8
+
