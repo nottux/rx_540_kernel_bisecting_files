@@ -1,16 +1,25 @@
 [utku2@utku2 linux]$ git bisect log
-# bad: [320b164abb32db876866a4ff8c2cb710524ac6ea] Merge tag 
-'drm-for-v4.17' of git://people.freedesktop.org/~airlied/linux
+# bad: [320b164abb32db876866a4ff8c2cb710524ac6ea] Merge tag 'drm-for-v4.17' of git://people.freedesktop.org/~airlied/linux
 # good: [0adb32858b0bddf4ada5f364a84ed60b196dbcda] Linux 4.16
-git bisect start '320b164abb32db876866a4ff8c2cb710524ac6ea' 
-'0adb32858b0bddf4ada5f364a84ed60b196dbcda' '--' 'drivers/gpu/drm/amd'
-# good: [9021d2edd259d992cf8b5b48791ab50829129de7] drm/amdgpu: mitigate 
-workaround for i915
+git bisect start '320b164abb32db876866a4ff8c2cb710524ac6ea' '0adb32858b0bddf4ada5f364a84ed60b196dbcda' '--' 'drivers/gpu/drm/amd'
+# good: [9021d2edd259d992cf8b5b48791ab50829129de7] drm/amdgpu: mitigate workaround for i915
 git bisect good 9021d2edd259d992cf8b5b48791ab50829129de7
-# bad: [aa5a5777304228819a52562d346bc3eb1b4873fa] drm/amd/display: 
-Vari-bright looks disabled near end of MM14
+# bad: [aa5a5777304228819a52562d346bc3eb1b4873fa] drm/amd/display: Vari-bright looks disabled near end of MM14
 git bisect bad aa5a5777304228819a52562d346bc3eb1b4873fa
-# good: [81988f9c3d9907d7df0ea97e8e4842064b88b7b8] drm/amdgpu: use 
-separate status for buffer funcs availability v2
+# good: [81988f9c3d9907d7df0ea97e8e4842064b88b7b8] drm/amdgpu: use separate status for buffer funcs availability v2
 git bisect good 81988f9c3d9907d7df0ea97e8e4842064b88b7b8
-
+# bad: [128ccceaba8656573b8b0f86d3ab6e38094cc754] Merge branch 'drm-next-4.17' of git://people.freedesktop.org/~agd5f/linux into drm-next
+git bisect bad 128ccceaba8656573b8b0f86d3ab6e38094cc754
+# bad: [180a8bebdd50fc8ce4677e579d49d9b73880caa7] drm/amd/pp: Fix sclk in highest two levels when compute on smu7
+git bisect bad 180a8bebdd50fc8ce4677e579d49d9b73880caa7
+# bad: [ada6770e956b7f7d298bfef56fed457ade5bad9e] drm/amd/pp: Remove cgs_query_system_info
+git bisect bad ada6770e956b7f7d298bfef56fed457ade5bad9e
+# good: [a2c120ce6b686c753968b7b1293c7bb878440b7f] drm/amd/pp: Simplify the create of powerplay instance
+git bisect good a2c120ce6b686c753968b7b1293c7bb878440b7f
+# good: [589941e1a2d65f5425c91a5859a5454df64b6982] drm/amdgpu: Notify sbios device ready before send request
+git bisect good 589941e1a2d65f5425c91a5859a5454df64b6982
+# bad: [6848d73e889bb29cfede51df8c1d0496c9787454] drm/amd/pp: Remove the wrap functions for acpi in powerplay
+git bisect bad 6848d73e889bb29cfede51df8c1d0496c9787454
+# bad: [e1deba285156fb4023bb48f22068de5b60e34e15] drm/amd/pp: Use amdgpu acpi helper functions in powerplay
+git bisect bad e1deba285156fb4023bb48f22068de5b60e34e15
+# first bad commit: [e1deba285156fb4023bb48f22068de5b60e34e15] drm/amd/pp: Use amdgpu acpi helper functions in powerplay

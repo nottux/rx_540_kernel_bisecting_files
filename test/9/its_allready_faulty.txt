@@ -1,0 +1,1888 @@
+-- Logs begin at Sun 2018-08-12 19:02:11 EEST, end at Mon 2019-04-01 17:52:28 EEST. --
+Nis 01 17:48:46 utku2 kernel: Linux version 4.16.0-rc1-MANJARO (ubuntu@ubuntu) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.11)) #1 SMP PREEMPT Mon Apr 1 14:18:57 UTC 2019
+Nis 01 17:48:46 utku2 kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-4.16.0-rc1-x86_64 root=UUID=e304eb4f-379d-4872-a185-c1b0dacf4666 rw quiet
+Nis 01 17:48:46 utku2 kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Nis 01 17:48:46 utku2 kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Nis 01 17:48:46 utku2 kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Nis 01 17:48:46 utku2 kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Nis 01 17:48:46 utku2 kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Nis 01 17:48:46 utku2 kernel: e820: BIOS-provided physical RAM map:
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009f7ff] usable
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x000000000009f800-0x000000000009ffff] reserved
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000b93b4fff] usable
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000b93b5000-0x00000000b9db4fff] ACPI NVS
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000b9db5000-0x00000000befbdfff] usable
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000befbe000-0x00000000bf8bdfff] reserved
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000bf8be000-0x00000000bfbbdfff] ACPI NVS
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000bfbbe000-0x00000000bfbfefff] ACPI data
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000bfbff000-0x00000000bfbfffff] usable
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000bfc00000-0x00000000bfffffff] reserved
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000d1000000-0x00000000d10fffff] reserved
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000f8000000-0x00000000fbffffff] reserved
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000fec10000-0x00000000fec10fff] reserved
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000fed80000-0x00000000fed80fff] reserved
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000000ff800000-0x00000000ffffffff] reserved
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x0000000100000000-0x00000001feffffff] usable
+Nis 01 17:48:46 utku2 kernel: BIOS-e820: [mem 0x00000001ff000000-0x000000023effffff] reserved
+Nis 01 17:48:46 utku2 kernel: NX (Execute Disable) protection: active
+Nis 01 17:48:46 utku2 kernel: random: fast init done
+Nis 01 17:48:46 utku2 kernel: SMBIOS 3.0 present.
+Nis 01 17:48:46 utku2 kernel: DMI: Acer Aspire A515-41G/Wartortle_BS, BIOS V1.09 06/27/2018
+Nis 01 17:48:46 utku2 kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Nis 01 17:48:46 utku2 kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Nis 01 17:48:46 utku2 kernel: e820: last_pfn = 0x1ff000 max_arch_pfn = 0x400000000
+Nis 01 17:48:46 utku2 kernel: MTRR default type: uncachable
+Nis 01 17:48:46 utku2 kernel: MTRR fixed ranges enabled:
+Nis 01 17:48:46 utku2 kernel:   00000-9FFFF write-back
+Nis 01 17:48:46 utku2 kernel:   A0000-BFFFF uncachable
+Nis 01 17:48:46 utku2 kernel:   C0000-FFFFF write-through
+Nis 01 17:48:46 utku2 kernel: MTRR variable ranges enabled:
+Nis 01 17:48:46 utku2 kernel:   0 base 000000000000 mask FFFF80000000 write-back
+Nis 01 17:48:46 utku2 kernel:   1 base 000080000000 mask FFFFC0000000 write-back
+Nis 01 17:48:46 utku2 kernel:   2 base 0000FF800000 mask FFFFFF800000 write-protect
+Nis 01 17:48:46 utku2 kernel:   3 disabled
+Nis 01 17:48:46 utku2 kernel:   4 disabled
+Nis 01 17:48:46 utku2 kernel:   5 disabled
+Nis 01 17:48:46 utku2 kernel:   6 disabled
+Nis 01 17:48:46 utku2 kernel:   7 disabled
+Nis 01 17:48:46 utku2 kernel: TOM2: 000000023f000000 aka 9200M
+Nis 01 17:48:46 utku2 kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Nis 01 17:48:46 utku2 kernel: e820: last_pfn = 0xbfc00 max_arch_pfn = 0x400000000
+Nis 01 17:48:46 utku2 kernel: Scanning 1 areas for low memory corruption
+Nis 01 17:48:46 utku2 kernel: Base memory trampoline at [        (ptrval)] 99000 size 24576
+Nis 01 17:48:46 utku2 kernel: Using GB pages for direct mapping
+Nis 01 17:48:46 utku2 kernel: BRK [0x12862d000, 0x12862dfff] PGTABLE
+Nis 01 17:48:46 utku2 kernel: BRK [0x12862e000, 0x12862efff] PGTABLE
+Nis 01 17:48:46 utku2 kernel: BRK [0x12862f000, 0x12862ffff] PGTABLE
+Nis 01 17:48:46 utku2 kernel: BRK [0x128630000, 0x128630fff] PGTABLE
+Nis 01 17:48:46 utku2 kernel: BRK [0x128631000, 0x128631fff] PGTABLE
+Nis 01 17:48:46 utku2 kernel: BRK [0x128632000, 0x128632fff] PGTABLE
+Nis 01 17:48:46 utku2 kernel: BRK [0x128633000, 0x128633fff] PGTABLE
+Nis 01 17:48:46 utku2 kernel: BRK [0x128634000, 0x128634fff] PGTABLE
+Nis 01 17:48:46 utku2 kernel: BRK [0x128635000, 0x128635fff] PGTABLE
+Nis 01 17:48:46 utku2 kernel: BRK [0x128636000, 0x128636fff] PGTABLE
+Nis 01 17:48:46 utku2 kernel: RAMDISK: [mem 0x36b39000-0x37593fff]
+Nis 01 17:48:46 utku2 kernel: ACPI: Early table checksum verification disabled
+Nis 01 17:48:46 utku2 kernel: ACPI: RSDP 0x00000000000FE020 000024 (v02 ACRSYS)
+Nis 01 17:48:46 utku2 kernel: ACPI: XSDT 0x00000000BFBD2188 0000D4 (v01 ACRSYS ACRPRDCT 00000001      01000013)
+Nis 01 17:48:46 utku2 kernel: ACPI: FACP 0x00000000BFBF9000 00010C (v05 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: DSDT 0x00000000BFBEB000 00800B (v01 ACRSYS ACRPRDCT 00040000 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: FACS 0x00000000BFB85000 000040
+Nis 01 17:48:46 utku2 kernel: ACPI: UEFI 0x00000000BFBFD000 000236 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: MSDM 0x00000000BFBFC000 000055 (v03 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: ASF! 0x00000000BFBFB000 0000A5 (v32 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: BOOT 0x00000000BFBFA000 000028 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: HPET 0x00000000BFBF8000 000038 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: APIC 0x00000000BFBF7000 000090 (v03 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: MCFG 0x00000000BFBF6000 00003C (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: SPCR 0x00000000BFBF4000 000050 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: UEFI 0x00000000BFBEA000 000042 (v01 ACRSYS ACRPRDCT 00000000 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: SSDT 0x00000000BFBE4000 0054D0 (v01 ACRSYS ACRPRDCT 00001000 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: SSDT 0x00000000BFBF5000 0009F8 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: SSDT 0x00000000BFBDB000 00888F (v02 ACRSYS ACRPRDCT 00000002 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: IVRS 0x00000000BFBDA000 0000D0 (v02 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: CRAT 0x00000000BFBD9000 000528 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: SSDT 0x00000000BFBD8000 000482 (v01 ACRSYS ACRPRDCT 00001000 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: TPM2 0x00000000BFBD7000 000034 (v03 ACRSYS ACRPRDCT 00000002 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: SSDT 0x00000000BFBD5000 0015EA (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: SSDT 0x00000000BFBD4000 000B5E (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: SSDT 0x00000000BFBD3000 000454 (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: SSDT 0x00000000BFBD0000 00165E (v01 ACRSYS ACRPRDCT 00000001 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: FPDT 0x00000000BFBCF000 000044 (v01 ACRSYS ACRPRDCT 00000002 1025 00040000)
+Nis 01 17:48:46 utku2 kernel: ACPI: Local APIC address 0xfee00000
+Nis 01 17:48:46 utku2 kernel: No NUMA configuration found
+Nis 01 17:48:46 utku2 kernel: Faking a node at [mem 0x0000000000000000-0x00000001feffffff]
+Nis 01 17:48:46 utku2 kernel: NODE_DATA(0) allocated [mem 0x1feffc000-0x1feffffff]
+Nis 01 17:48:46 utku2 kernel: tsc: Fast TSC calibration using PIT
+Nis 01 17:48:46 utku2 kernel: Zone ranges:
+Nis 01 17:48:46 utku2 kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Nis 01 17:48:46 utku2 kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Nis 01 17:48:46 utku2 kernel:   Normal   [mem 0x0000000100000000-0x00000001feffffff]
+Nis 01 17:48:46 utku2 kernel:   Device   empty
+Nis 01 17:48:46 utku2 kernel: Movable zone start for each node
+Nis 01 17:48:46 utku2 kernel: Early memory node ranges
+Nis 01 17:48:46 utku2 kernel:   node   0: [mem 0x0000000000001000-0x000000000009efff]
+Nis 01 17:48:46 utku2 kernel:   node   0: [mem 0x0000000000100000-0x00000000b93b4fff]
+Nis 01 17:48:46 utku2 kernel:   node   0: [mem 0x00000000b9db5000-0x00000000befbdfff]
+Nis 01 17:48:46 utku2 kernel:   node   0: [mem 0x00000000bfbff000-0x00000000bfbfffff]
+Nis 01 17:48:46 utku2 kernel:   node   0: [mem 0x0000000100000000-0x00000001feffffff]
+Nis 01 17:48:46 utku2 kernel: Initmem setup node 0 [mem 0x0000000000001000-0x00000001feffffff]
+Nis 01 17:48:46 utku2 kernel: On node 0 totalpages: 1824093
+Nis 01 17:48:46 utku2 kernel:   DMA zone: 64 pages used for memmap
+Nis 01 17:48:46 utku2 kernel:   DMA zone: 21 pages reserved
+Nis 01 17:48:46 utku2 kernel:   DMA zone: 3998 pages, LIFO batch:0
+Nis 01 17:48:46 utku2 kernel:   DMA32 zone: 12119 pages used for memmap
+Nis 01 17:48:46 utku2 kernel:   DMA32 zone: 775615 pages, LIFO batch:31
+Nis 01 17:48:46 utku2 kernel:   Normal zone: 16320 pages used for memmap
+Nis 01 17:48:46 utku2 kernel:   Normal zone: 1044480 pages, LIFO batch:31
+Nis 01 17:48:46 utku2 kernel: Reserved but unavailable: 98 pages
+Nis 01 17:48:46 utku2 kernel: ACPI: PM-Timer IO Port: 0x408
+Nis 01 17:48:46 utku2 kernel: ACPI: Local APIC address 0xfee00000
+Nis 01 17:48:46 utku2 kernel: ACPI: LAPIC_NMI (acpi_id[0x00] high edge lint[0x1])
+Nis 01 17:48:46 utku2 kernel: ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+Nis 01 17:48:46 utku2 kernel: ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+Nis 01 17:48:46 utku2 kernel: ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+Nis 01 17:48:46 utku2 kernel: IOAPIC[0]: apic_id 4, version 33, address 0xfec00000, GSI 0-23
+Nis 01 17:48:46 utku2 kernel: IOAPIC[1]: apic_id 5, version 33, address 0xfec01000, GSI 24-55
+Nis 01 17:48:46 utku2 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Nis 01 17:48:46 utku2 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+Nis 01 17:48:46 utku2 kernel: ACPI: IRQ0 used by override.
+Nis 01 17:48:46 utku2 kernel: ACPI: IRQ9 used by override.
+Nis 01 17:48:46 utku2 kernel: Using ACPI (MADT) for SMP configuration information
+Nis 01 17:48:46 utku2 kernel: ACPI: HPET id: 0x10228210 base: 0xfed00000
+Nis 01 17:48:46 utku2 kernel: ACPI: SPCR: SPCR table version 1
+Nis 01 17:48:46 utku2 kernel: ACPI: SPCR: console: uart,io,0x3f8,115200
+Nis 01 17:48:46 utku2 kernel: smpboot: Allowing 4 CPUs, 0 hotplug CPUs
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xb93b5000-0xb9db4fff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xbefbe000-0xbf8bdfff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xbf8be000-0xbfbbdfff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xbfbbe000-0xbfbfefff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xbfc00000-0xbfffffff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xc0000000-0xd0ffffff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xd1000000-0xd10fffff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xd1100000-0xf7ffffff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xf8000000-0xfbffffff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xfc000000-0xfebfffff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xfec01000-0xfec0ffff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xfec10000-0xfec10fff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xfec11000-0xfed7ffff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xfed80000-0xfed80fff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xfed81000-0xfedfffff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xfee01000-0xff7fffff]
+Nis 01 17:48:46 utku2 kernel: PM: Registered nosave memory: [mem 0xff800000-0xffffffff]
+Nis 01 17:48:46 utku2 kernel: e820: [mem 0xd1100000-0xf7ffffff] available for PCI devices
+Nis 01 17:48:46 utku2 kernel: Booting paravirtualized kernel on bare hardware
+Nis 01 17:48:46 utku2 kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Nis 01 17:48:46 utku2 kernel: setup_percpu: NR_CPUS:128 nr_cpumask_bits:128 nr_cpu_ids:4 nr_node_ids:1
+Nis 01 17:48:46 utku2 kernel: percpu: Embedded 43 pages/cpu @        (ptrval) s139264 r8192 d28672 u524288
+Nis 01 17:48:46 utku2 kernel: pcpu-alloc: s139264 r8192 d28672 u524288 alloc=1*2097152
+Nis 01 17:48:46 utku2 kernel: pcpu-alloc: [0] 0 1 2 3 
+Nis 01 17:48:46 utku2 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 1795569
+Nis 01 17:48:46 utku2 kernel: Policy zone: Normal
+Nis 01 17:48:46 utku2 kernel: Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.16.0-rc1-x86_64 root=UUID=e304eb4f-379d-4872-a185-c1b0dacf4666 rw quiet
+Nis 01 17:48:46 utku2 kernel: Calgary: detecting Calgary via BIOS EBDA area
+Nis 01 17:48:46 utku2 kernel: Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+Nis 01 17:48:46 utku2 kernel: Memory: 7081524K/7296372K available (10252K kernel code, 1155K rwdata, 2756K rodata, 1360K init, 1004K bss, 214848K reserved, 0K cma-reserved)
+Nis 01 17:48:46 utku2 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Nis 01 17:48:46 utku2 kernel: ftrace: allocating 29041 entries in 114 pages
+Nis 01 17:48:46 utku2 kernel: Preemptible hierarchical RCU implementation.
+Nis 01 17:48:46 utku2 kernel:         RCU restricting CPUs from NR_CPUS=128 to nr_cpu_ids=4.
+Nis 01 17:48:46 utku2 kernel:         Tasks RCU enabled.
+Nis 01 17:48:46 utku2 kernel: RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+Nis 01 17:48:46 utku2 kernel: NR_IRQS: 8448, nr_irqs: 1000, preallocated irqs: 16
+Nis 01 17:48:46 utku2 kernel: NO_HZ: Clearing 0 from nohz_full range for timekeeping
+Nis 01 17:48:46 utku2 kernel: NO_HZ: Full dynticks CPUs: 1-3.
+Nis 01 17:48:46 utku2 kernel:         Note: kernel parameter 'rcu_nocbs=' contains nonexistent CPUs.
+Nis 01 17:48:46 utku2 kernel:         Offload RCU callbacks from CPUs: 1-3.
+Nis 01 17:48:46 utku2 kernel: spurious 8259A interrupt: IRQ7.
+Nis 01 17:48:46 utku2 kernel: Console: colour dummy device 80x25
+Nis 01 17:48:46 utku2 kernel: console [tty0] enabled
+Nis 01 17:48:46 utku2 kernel: ACPI: Core revision 20180105
+Nis 01 17:48:46 utku2 kernel: ACPI: 9 ACPI AML tables successfully acquired and loaded
+Nis 01 17:48:46 utku2 kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484873504 ns
+Nis 01 17:48:46 utku2 kernel: hpet clockevent registered
+Nis 01 17:48:46 utku2 kernel: APIC: Switch to symmetric I/O mode setup
+Nis 01 17:48:46 utku2 kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Nis 01 17:48:46 utku2 kernel: tsc: Fast TSC calibration using PIT
+Nis 01 17:48:46 utku2 kernel: tsc: Detected 2495.324 MHz processor
+Nis 01 17:48:46 utku2 kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x23f7f8a8c77, max_idle_ns: 440795310962 ns
+Nis 01 17:48:46 utku2 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 4990.64 BogoMIPS (lpj=2495324)
+Nis 01 17:48:46 utku2 kernel: pid_max: default: 32768 minimum: 301
+Nis 01 17:48:46 utku2 kernel: Security Framework initialized
+Nis 01 17:48:46 utku2 kernel: Yama: becoming mindful.
+Nis 01 17:48:46 utku2 kernel: Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+Nis 01 17:48:46 utku2 kernel: Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes)
+Nis 01 17:48:46 utku2 kernel: Mount-cache hash table entries: 16384 (order: 5, 131072 bytes)
+Nis 01 17:48:46 utku2 kernel: Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes)
+Nis 01 17:48:46 utku2 kernel: [Firmware Info]: CPU: Re-enabling disabled Topology Extensions Support.
+Nis 01 17:48:46 utku2 kernel: CPU: Physical Processor ID: 0
+Nis 01 17:48:46 utku2 kernel: CPU: Processor Core ID: 0
+Nis 01 17:48:46 utku2 kernel: mce: CPU supports 7 MCE banks
+Nis 01 17:48:46 utku2 kernel: LVT offset 1 assigned for vector 0xf9
+Nis 01 17:48:46 utku2 kernel: Last level iTLB entries: 4KB 512, 2MB 1024, 4MB 512
+Nis 01 17:48:46 utku2 kernel: Last level dTLB entries: 4KB 1024, 2MB 1024, 4MB 512, 1GB 0
+Nis 01 17:48:46 utku2 kernel: Spectre V2 : Mitigation: Full AMD retpoline
+Nis 01 17:48:46 utku2 kernel: Spectre V2 : Enabling Indirect Branch Prediction Barrier
+Nis 01 17:48:46 utku2 kernel: Freeing SMP alternatives memory: 24K
+Nis 01 17:48:46 utku2 kernel: smpboot: CPU0: AMD A10-9620P RADEON R5, 10 COMPUTE CORES 4C+6G (family: 0x15, model: 0x65, stepping: 0x1)
+Nis 01 17:48:46 utku2 kernel: Performance Events: Fam15h core perfctr, AMD PMU driver.
+Nis 01 17:48:46 utku2 kernel: ... version:                0
+Nis 01 17:48:46 utku2 kernel: ... bit width:              48
+Nis 01 17:48:46 utku2 kernel: ... generic registers:      6
+Nis 01 17:48:46 utku2 kernel: ... value mask:             0000ffffffffffff
+Nis 01 17:48:46 utku2 kernel: ... max period:             00007fffffffffff
+Nis 01 17:48:46 utku2 kernel: ... fixed-purpose events:   0
+Nis 01 17:48:46 utku2 kernel: ... event mask:             000000000000003f
+Nis 01 17:48:46 utku2 kernel: Hierarchical SRCU implementation.
+Nis 01 17:48:46 utku2 kernel: watchdog: Disabling watchdog on nohz_full cores by default
+Nis 01 17:48:46 utku2 kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+Nis 01 17:48:46 utku2 kernel: smp: Bringing up secondary CPUs ...
+Nis 01 17:48:46 utku2 kernel: x86: Booting SMP configuration:
+Nis 01 17:48:46 utku2 kernel: .... node  #0, CPUs:      #1 #2 #3
+Nis 01 17:48:46 utku2 kernel: smp: Brought up 1 node, 4 CPUs
+Nis 01 17:48:46 utku2 kernel: smpboot: Max logical packages: 1
+Nis 01 17:48:46 utku2 kernel: smpboot: Total of 4 processors activated (19962.59 BogoMIPS)
+Nis 01 17:48:46 utku2 kernel: devtmpfs: initialized
+Nis 01 17:48:46 utku2 kernel: x86/mm: Memory block size: 128MB
+Nis 01 17:48:46 utku2 kernel: PM: Registering ACPI NVS region [mem 0xb93b5000-0xb9db4fff] (10485760 bytes)
+Nis 01 17:48:46 utku2 kernel: PM: Registering ACPI NVS region [mem 0xbf8be000-0xbfbbdfff] (3145728 bytes)
+Nis 01 17:48:46 utku2 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Nis 01 17:48:46 utku2 kernel: futex hash table entries: 1024 (order: 4, 65536 bytes)
+Nis 01 17:48:46 utku2 kernel: pinctrl core: initialized pinctrl subsystem
+Nis 01 17:48:46 utku2 kernel: RTC time: 14:48:35, date: 04/01/19
+Nis 01 17:48:46 utku2 kernel: NET: Registered protocol family 16
+Nis 01 17:48:46 utku2 kernel: cpuidle: using governor ladder
+Nis 01 17:48:46 utku2 kernel: cpuidle: using governor menu
+Nis 01 17:48:46 utku2 kernel: Simple Boot Flag at 0x44 set to 0x1
+Nis 01 17:48:46 utku2 kernel: ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+Nis 01 17:48:46 utku2 kernel: ACPI: bus type PCI registered
+Nis 01 17:48:46 utku2 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Nis 01 17:48:46 utku2 kernel: PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf8000000-0xfbffffff] (base 0xf8000000)
+Nis 01 17:48:46 utku2 kernel: PCI: MMCONFIG at [mem 0xf8000000-0xfbffffff] reserved in E820
+Nis 01 17:48:46 utku2 kernel: PCI: Using configuration type 1 for base access
+Nis 01 17:48:46 utku2 kernel: mtrr: your CPUs had inconsistent variable MTRR settings
+Nis 01 17:48:46 utku2 kernel: mtrr: probably your BIOS does not setup all CPUs.
+Nis 01 17:48:46 utku2 kernel: mtrr: corrected configuration.
+Nis 01 17:48:46 utku2 kernel: HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+Nis 01 17:48:46 utku2 kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Nis 01 17:48:46 utku2 kernel: ACPI: Added _OSI(Module Device)
+Nis 01 17:48:46 utku2 kernel: ACPI: Added _OSI(Processor Device)
+Nis 01 17:48:46 utku2 kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+Nis 01 17:48:46 utku2 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Nis 01 17:48:46 utku2 kernel: ACPI: Executed 1 blocks of module-level executable AML code
+Nis 01 17:48:46 utku2 kernel: ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+Nis 01 17:48:46 utku2 kernel: ACPI: EC: EC started
+Nis 01 17:48:46 utku2 kernel: ACPI: EC: interrupt blocked
+Nis 01 17:48:46 utku2 kernel: ACPI: \_SB_.PCI0.LPC0.EC0_: Used as first EC
+Nis 01 17:48:46 utku2 kernel: ACPI: \_SB_.PCI0.LPC0.EC0_: GPE=0x3, EC_CMD/EC_SC=0x66, EC_DATA=0x62
+Nis 01 17:48:46 utku2 kernel: ACPI: \_SB_.PCI0.LPC0.EC0_: Used as boot DSDT EC to handle transactions
+Nis 01 17:48:46 utku2 kernel: ACPI: Interpreter enabled
+Nis 01 17:48:46 utku2 kernel: ACPI: (supports S0 S3 S4 S5)
+Nis 01 17:48:46 utku2 kernel: ACPI: Using IOAPIC for interrupt routing
+Nis 01 17:48:46 utku2 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Nis 01 17:48:46 utku2 kernel: ACPI: Enabled 4 GPEs in block 00 to 1F
+Nis 01 17:48:46 utku2 kernel: ACPI: Power Resource [M237] (on)
+Nis 01 17:48:46 utku2 kernel: ACPI: Power Resource [P0U2] (off)
+Nis 01 17:48:46 utku2 kernel: ACPI: Power Resource [P3U2] (off)
+Nis 01 17:48:46 utku2 kernel: ACPI: Power Resource [P0U3] (off)
+Nis 01 17:48:46 utku2 kernel: ACPI: Power Resource [P3U3] (off)
+Nis 01 17:48:46 utku2 kernel: ACPI: Power Resource [P0ST] (on)
+Nis 01 17:48:46 utku2 kernel: ACPI: Power Resource [P3ST] (on)
+Nis 01 17:48:46 utku2 kernel: ACPI: Power Resource [P0SD] (off)
+Nis 01 17:48:46 utku2 kernel: ACPI: Power Resource [P3SD] (off)
+Nis 01 17:48:46 utku2 kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Nis 01 17:48:46 utku2 kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI]
+Nis 01 17:48:46 utku2 kernel: acpi PNP0A08:00: _OSC: platform does not support [AER]
+Nis 01 17:48:46 utku2 kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME PCIeCapability]
+Nis 01 17:48:46 utku2 kernel: acpi PNP0A08:00: FADT indicates ASPM is unsupported, using BIOS configuration
+Nis 01 17:48:46 utku2 kernel: acpi PNP0A08:00: [Firmware Info]: MMCONFIG for domain 0000 [bus 00-3f] only partially covers this bridge
+Nis 01 17:48:46 utku2 kernel: acpi PNP0A08:00: ignoring host bridge window [mem 0x000cc000-0x000cffff window] (conflicts with Video ROM [mem 0x000c0000-0x000cfbff])
+Nis 01 17:48:46 utku2 kernel: PCI host bridge to bus 0000:00
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [mem 0x000c0000-0x000c3fff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [mem 0x000c4000-0x000c7fff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [mem 0x000c8000-0x000cbfff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [mem 0x000d0000-0x000d3fff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [mem 0x000d4000-0x000d7fff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [mem 0x000d8000-0x000dbfff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [mem 0x000dc000-0x000dffff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [mem 0x000e0000-0x000e3fff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [mem 0x000e4000-0x000e7fff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [mem 0x000e8000-0x000ebfff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [mem 0x000ec000-0x000effff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [mem 0xc0000000-0xf7ffffff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [mem 0xfc000000-0xfed3ffff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:00.0: [1022:1576] type 00 class 0x060000
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:00.2: [1022:1577] type 00 class 0x080600
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: [1002:9874] type 00 class 0x030000
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: reg 0x10: [mem 0xe0000000-0xefffffff 64bit pref]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: reg 0x18: [mem 0xd0800000-0xd0ffffff 64bit pref]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: reg 0x20: [io  0x4000-0x40ff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: reg 0x24: [mem 0xd1500000-0xd153ffff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: reg 0x30: [mem 0xfffe0000-0xffffffff pref]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: enabling Extended Tags
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: supports D1 D2
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: PME# supported from D1 D2 D3hot
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.1: [1002:9840] type 00 class 0x040300
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.1: reg 0x10: [mem 0xd1560000-0xd1563fff 64bit]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.1: enabling Extended Tags
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.1: supports D1 D2
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.0: [1022:157b] type 00 class 0x060000
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.2: [1022:157c] type 01 class 0x060400
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.2: enabling Extended Tags
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.2: PME# supported from D0 D3hot D3cold
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.3: [1022:157c] type 01 class 0x060400
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.3: enabling Extended Tags
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.3: PME# supported from D0 D3hot D3cold
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:03.0: [1022:157b] type 00 class 0x060000
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:03.1: [1022:157c] type 01 class 0x060400
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:03.1: enabling Extended Tags
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:03.1: PME# supported from D0 D3hot D3cold
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:08.0: [1022:1578] type 00 class 0x108000
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:08.0: reg 0x10: [mem 0xd1540000-0xd155ffff 64bit pref]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:08.0: reg 0x18: [mem 0xd1100000-0xd11fffff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:08.0: reg 0x1c: [mem 0xd156f000-0xd156ffff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:08.0: reg 0x24: [mem 0xd156a000-0xd156bfff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:09.0: [1022:157d] type 00 class 0x060000
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:09.2: [1022:157a] type 00 class 0x040300
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:09.2: reg 0x10: [mem 0xd1564000-0xd1567fff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:09.2: PME# supported from D0 D3hot D3cold
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:10.0: [1022:7914] type 00 class 0x0c0330
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:10.0: reg 0x10: [mem 0xd1568000-0xd1569fff 64bit]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:10.0: PME# supported from D0 D3hot D3cold
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:11.0: [1022:7901] type 00 class 0x010601
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:11.0: reg 0x10: [io  0x4118-0x411f]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:11.0: reg 0x14: [io  0x4124-0x4127]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:11.0: reg 0x18: [io  0x4110-0x4117]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:11.0: reg 0x1c: [io  0x4120-0x4123]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:11.0: reg 0x20: [io  0x4100-0x410f]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:11.0: reg 0x24: [mem 0xd156c000-0xd156c3ff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:11.0: PME# supported from D3hot
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:12.0: [1022:7908] type 00 class 0x0c0320
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:12.0: reg 0x10: [mem 0xd156d000-0xd156d0ff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:12.0: supports D1 D2
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:12.0: PME# supported from D0 D1 D2 D3hot D3cold
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:14.0: [1022:790b] type 00 class 0x0c0500
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:14.3: [1022:790e] type 00 class 0x060100
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:18.0: [1022:1570] type 00 class 0x060000
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:18.1: [1022:1571] type 00 class 0x060000
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:18.2: [1022:1572] type 00 class 0x060000
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:18.3: [1022:1573] type 00 class 0x060000
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:18.4: [1022:1574] type 00 class 0x060000
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:18.5: [1022:1575] type 00 class 0x060000
+Nis 01 17:48:46 utku2 kernel: pci 0000:01:00.0: [10ec:5287] type 00 class 0xff0000
+Nis 01 17:48:46 utku2 kernel: pci 0000:01:00.0: reg 0x10: [mem 0xd1405000-0xd1405fff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:01:00.0: reg 0x30: [mem 0xffff0000-0xffffffff pref]
+Nis 01 17:48:46 utku2 kernel: pci 0000:01:00.0: supports D1 D2
+Nis 01 17:48:46 utku2 kernel: pci 0000:01:00.0: PME# supported from D1 D2 D3hot D3cold
+Nis 01 17:48:46 utku2 kernel: pci 0000:01:00.1: [10ec:8168] type 00 class 0x020000
+Nis 01 17:48:46 utku2 kernel: pci 0000:01:00.1: reg 0x10: [io  0x3000-0x30ff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:01:00.1: reg 0x18: [mem 0xd1404000-0xd1404fff 64bit]
+Nis 01 17:48:46 utku2 kernel: pci 0000:01:00.1: reg 0x20: [mem 0xd1400000-0xd1403fff 64bit]
+Nis 01 17:48:46 utku2 kernel: pci 0000:01:00.1: supports D1 D2
+Nis 01 17:48:46 utku2 kernel: pci 0000:01:00.1: PME# supported from D0 D1 D2 D3hot D3cold
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.2: PCI bridge to [bus 01]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.2:   bridge window [io  0x3000-0x3fff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.2:   bridge window [mem 0xd1400000-0xd14fffff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:02:00.0: [8086:24fb] type 00 class 0x028000
+Nis 01 17:48:46 utku2 kernel: pci 0000:02:00.0: reg 0x10: [mem 0xd1300000-0xd1301fff 64bit]
+Nis 01 17:48:46 utku2 kernel: pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.3: PCI bridge to [bus 02]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.3:   bridge window [mem 0xd1300000-0xd13fffff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:03:00.0: [1002:699f] type 00 class 0x038000
+Nis 01 17:48:46 utku2 kernel: pci 0000:03:00.0: reg 0x10: [mem 0xc0000000-0xcfffffff 64bit pref]
+Nis 01 17:48:46 utku2 kernel: pci 0000:03:00.0: reg 0x18: [mem 0xd0000000-0xd01fffff 64bit pref]
+Nis 01 17:48:46 utku2 kernel: pci 0000:03:00.0: reg 0x20: [io  0x2000-0x20ff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:03:00.0: reg 0x24: [mem 0xd1200000-0xd123ffff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:03:00.0: reg 0x30: [mem 0xfffe0000-0xffffffff pref]
+Nis 01 17:48:46 utku2 kernel: pci 0000:03:00.0: enabling Extended Tags
+Nis 01 17:48:46 utku2 kernel: pci 0000:03:00.0: supports D1 D2
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:03.1: PCI bridge to [bus 03]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:03.1:   bridge window [io  0x2000-0x2fff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:03.1:   bridge window [mem 0xd1200000-0xd12fffff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:03.1:   bridge window [mem 0xc0000000-0xd01fffff 64bit pref]
+Nis 01 17:48:46 utku2 kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 3 5 6 10 11) *0, disabled.
+Nis 01 17:48:46 utku2 kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 3 5 6 10 11) *0, disabled.
+Nis 01 17:48:46 utku2 kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 3 5 6 10 11) *0, disabled.
+Nis 01 17:48:46 utku2 kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 3 5 6 10 11) *0, disabled.
+Nis 01 17:48:46 utku2 kernel: ACPI: PCI Interrupt Link [LNKE] (IRQs 3 5 6 10 11) *0, disabled.
+Nis 01 17:48:46 utku2 kernel: ACPI: PCI Interrupt Link [LNKF] (IRQs 3 5 6 10 11) *0, disabled.
+Nis 01 17:48:46 utku2 kernel: ACPI: PCI Interrupt Link [LNKG] (IRQs 3 5 6 10 11) *0, disabled.
+Nis 01 17:48:46 utku2 kernel: ACPI: PCI Interrupt Link [LNKH] (IRQs 3 5 6 10 11) *0, disabled.
+Nis 01 17:48:46 utku2 kernel: ACPI: EC: interrupt unblocked
+Nis 01 17:48:46 utku2 kernel: ACPI: EC: event unblocked
+Nis 01 17:48:46 utku2 kernel: ACPI: \_SB_.PCI0.LPC0.EC0_: GPE=0x3, EC_CMD/EC_SC=0x66, EC_DATA=0x62
+Nis 01 17:48:46 utku2 kernel: ACPI: \_SB_.PCI0.LPC0.EC0_: Used as boot DSDT EC to handle transactions and events
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: vgaarb: setting as boot VGA device
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: vgaarb: bridge control possible
+Nis 01 17:48:46 utku2 kernel: vgaarb: loaded
+Nis 01 17:48:46 utku2 kernel: EDAC MC: Ver: 3.0.0
+Nis 01 17:48:46 utku2 kernel: PCI: Using ACPI for IRQ routing
+Nis 01 17:48:46 utku2 kernel: PCI: pci_cache_line_size set to 64 bytes
+Nis 01 17:48:46 utku2 kernel: e820: reserve RAM buffer [mem 0x0009f800-0x0009ffff]
+Nis 01 17:48:46 utku2 kernel: e820: reserve RAM buffer [mem 0xb93b5000-0xbbffffff]
+Nis 01 17:48:46 utku2 kernel: e820: reserve RAM buffer [mem 0xbefbe000-0xbfffffff]
+Nis 01 17:48:46 utku2 kernel: e820: reserve RAM buffer [mem 0xbfc00000-0xbfffffff]
+Nis 01 17:48:46 utku2 kernel: e820: reserve RAM buffer [mem 0x1ff000000-0x1ffffffff]
+Nis 01 17:48:46 utku2 kernel: NetLabel: Initializing
+Nis 01 17:48:46 utku2 kernel: NetLabel:  domain hash size = 128
+Nis 01 17:48:46 utku2 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Nis 01 17:48:46 utku2 kernel: NetLabel:  unlabeled traffic allowed by default
+Nis 01 17:48:46 utku2 kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+Nis 01 17:48:46 utku2 kernel: hpet0: 3 comparators, 32-bit 14.318180 MHz counter
+Nis 01 17:48:46 utku2 kernel: clocksource: Switched to clocksource tsc-early
+Nis 01 17:48:46 utku2 kernel: VFS: Disk quotas dquot_6.6.0
+Nis 01 17:48:46 utku2 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Nis 01 17:48:46 utku2 kernel: pnp: PnP ACPI init
+Nis 01 17:48:46 utku2 kernel: system 00:00: [mem 0xfec00000-0xfec01fff] could not be reserved
+Nis 01 17:48:46 utku2 kernel: system 00:00: [mem 0xfee00000-0xfee00fff] has been reserved
+Nis 01 17:48:46 utku2 kernel: system 00:00: [mem 0xd1000000-0xd10fffff] has been reserved
+Nis 01 17:48:46 utku2 kernel: system 00:00: Plug and Play ACPI device, IDs PNP0c02 (active)
+Nis 01 17:48:46 utku2 kernel: pnp 00:01: Plug and Play ACPI device, IDs PNP0b00 (active)
+Nis 01 17:48:46 utku2 kernel: pnp 00:02: Plug and Play ACPI device, IDs FUJ7401 PNP0303 (active)
+Nis 01 17:48:46 utku2 kernel: system 00:03: [io  0x0400-0x04cf] has been reserved
+Nis 01 17:48:46 utku2 kernel: system 00:03: [io  0x04d0-0x04d1] has been reserved
+Nis 01 17:48:46 utku2 kernel: system 00:03: [io  0x04d6] has been reserved
+Nis 01 17:48:46 utku2 kernel: system 00:03: [io  0x0c00-0x0c01] has been reserved
+Nis 01 17:48:46 utku2 kernel: system 00:03: [io  0x0c14] has been reserved
+Nis 01 17:48:46 utku2 kernel: system 00:03: [io  0x0c50-0x0c52] has been reserved
+Nis 01 17:48:46 utku2 kernel: system 00:03: [io  0x0c6c] has been reserved
+Nis 01 17:48:46 utku2 kernel: system 00:03: [io  0x0c6f] has been reserved
+Nis 01 17:48:46 utku2 kernel: system 00:03: [io  0x0cd0-0x0cdb] has been reserved
+Nis 01 17:48:46 utku2 kernel: system 00:03: Plug and Play ACPI device, IDs PNP0c02 (active)
+Nis 01 17:48:46 utku2 kernel: system 00:04: [mem 0x000e0000-0x000fffff] could not be reserved
+Nis 01 17:48:46 utku2 kernel: system 00:04: [mem 0xff800000-0xffffffff] has been reserved
+Nis 01 17:48:46 utku2 kernel: system 00:04: Plug and Play ACPI device, IDs PNP0c01 (active)
+Nis 01 17:48:46 utku2 kernel: pnp: PnP ACPI: found 5 devices
+Nis 01 17:48:46 utku2 kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: can't claim BAR 6 [mem 0xfffe0000-0xffffffff pref]: no compatible bridge window
+Nis 01 17:48:46 utku2 kernel: pci 0000:01:00.0: can't claim BAR 6 [mem 0xffff0000-0xffffffff pref]: no compatible bridge window
+Nis 01 17:48:46 utku2 kernel: pci 0000:03:00.0: can't claim BAR 6 [mem 0xfffe0000-0xffffffff pref]: no compatible bridge window
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: BAR 6: assigned [mem 0xd0200000-0xd021ffff pref]
+Nis 01 17:48:46 utku2 kernel: pci 0000:01:00.0: BAR 6: assigned [mem 0xd1410000-0xd141ffff pref]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.2: PCI bridge to [bus 01]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.2:   bridge window [io  0x3000-0x3fff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.2:   bridge window [mem 0xd1400000-0xd14fffff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.3: PCI bridge to [bus 02]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:02.3:   bridge window [mem 0xd1300000-0xd13fffff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:03:00.0: BAR 6: assigned [mem 0xd1240000-0xd125ffff pref]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:03.1: PCI bridge to [bus 03]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:03.1:   bridge window [io  0x2000-0x2fff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:03.1:   bridge window [mem 0xd1200000-0xd12fffff]
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:03.1:   bridge window [mem 0xc0000000-0xd01fffff 64bit pref]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 7 [mem 0x000c0000-0x000c3fff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 8 [mem 0x000c4000-0x000c7fff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 9 [mem 0x000c8000-0x000cbfff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 10 [mem 0x000d0000-0x000d3fff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 11 [mem 0x000d4000-0x000d7fff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 12 [mem 0x000d8000-0x000dbfff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 13 [mem 0x000dc000-0x000dffff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 14 [mem 0x000e0000-0x000e3fff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 15 [mem 0x000e4000-0x000e7fff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 16 [mem 0x000e8000-0x000ebfff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 17 [mem 0x000ec000-0x000effff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 18 [mem 0xc0000000-0xf7ffffff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:00: resource 19 [mem 0xfc000000-0xfed3ffff window]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:01: resource 0 [io  0x3000-0x3fff]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:01: resource 1 [mem 0xd1400000-0xd14fffff]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:02: resource 1 [mem 0xd1300000-0xd13fffff]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:03: resource 0 [io  0x2000-0x2fff]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:03: resource 1 [mem 0xd1200000-0xd12fffff]
+Nis 01 17:48:46 utku2 kernel: pci_bus 0000:03: resource 2 [mem 0xc0000000-0xd01fffff 64bit pref]
+Nis 01 17:48:46 utku2 kernel: NET: Registered protocol family 2
+Nis 01 17:48:46 utku2 kernel: tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes)
+Nis 01 17:48:46 utku2 kernel: TCP established hash table entries: 65536 (order: 7, 524288 bytes)
+Nis 01 17:48:46 utku2 kernel: TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+Nis 01 17:48:46 utku2 kernel: TCP: Hash tables configured (established 65536 bind 65536)
+Nis 01 17:48:46 utku2 kernel: UDP hash table entries: 4096 (order: 5, 131072 bytes)
+Nis 01 17:48:46 utku2 kernel: UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes)
+Nis 01 17:48:46 utku2 kernel: NET: Registered protocol family 1
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:01.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Nis 01 17:48:46 utku2 kernel: PCI: CLS 64 bytes, default 64
+Nis 01 17:48:46 utku2 kernel: Unpacking initramfs...
+Nis 01 17:48:46 utku2 kernel: Freeing initrd memory: 10604K
+Nis 01 17:48:46 utku2 kernel: AMD-Vi: IOMMU performance counters supported
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:00.2: can't derive routing for PCI INT A
+Nis 01 17:48:46 utku2 kernel: pci 0000:00:00.2: PCI INT A: not connected
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:01.0 to group 0
+Nis 01 17:48:46 utku2 kernel: iommu: Using direct mapping for device 0000:00:01.0
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:01.1 to group 0
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:02.0 to group 1
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:02.2 to group 1
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:02.3 to group 1
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:03.0 to group 2
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:03.1 to group 2
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:08.0 to group 3
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:09.0 to group 4
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:09.2 to group 4
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:10.0 to group 5
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:11.0 to group 6
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:12.0 to group 7
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:14.0 to group 8
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:14.3 to group 8
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:18.0 to group 9
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:18.1 to group 9
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:18.2 to group 9
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:18.3 to group 9
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:18.4 to group 9
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:00:18.5 to group 9
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:01:00.0 to group 1
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:01:00.1 to group 1
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:02:00.0 to group 1
+Nis 01 17:48:46 utku2 kernel: iommu: Adding device 0000:03:00.0 to group 2
+Nis 01 17:48:46 utku2 kernel: AMD-Vi: Found IOMMU at 0000:00:00.2 cap 0x40
+Nis 01 17:48:46 utku2 kernel: AMD-Vi: Extended features (0x37ef22294ada):
+Nis 01 17:48:46 utku2 kernel:  PPR NX GT IA GA PC GA_vAPIC
+Nis 01 17:48:46 utku2 kernel: AMD-Vi: Interrupt remapping enabled
+Nis 01 17:48:46 utku2 kernel: AMD-Vi: virtual APIC enabled
+Nis 01 17:48:46 utku2 kernel: AMD-Vi: Lazy IO/TLB flushing enabled
+Nis 01 17:48:46 utku2 kernel: amd_uncore: AMD NB counters detected
+Nis 01 17:48:46 utku2 kernel: LVT offset 0 assigned for vector 0x400
+Nis 01 17:48:46 utku2 kernel: perf: AMD IBS detected (0x000007ff)
+Nis 01 17:48:46 utku2 kernel: perf/amd_iommu: Detected AMD IOMMU #0 (2 banks, 4 counters/bank).
+Nis 01 17:48:46 utku2 kernel: Scanning for low memory corruption every 60 seconds
+Nis 01 17:48:46 utku2 kernel: Initialise system trusted keyrings
+Nis 01 17:48:46 utku2 kernel: Key type blacklist registered
+Nis 01 17:48:46 utku2 kernel: workingset: timestamp_bits=41 max_order=21 bucket_order=0
+Nis 01 17:48:46 utku2 kernel: zbud: loaded
+Nis 01 17:48:46 utku2 kernel: Key type asymmetric registered
+Nis 01 17:48:46 utku2 kernel: Asymmetric key parser 'x509' registered
+Nis 01 17:48:46 utku2 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+Nis 01 17:48:46 utku2 kernel: io scheduler noop registered
+Nis 01 17:48:46 utku2 kernel: io scheduler deadline registered
+Nis 01 17:48:46 utku2 kernel: io scheduler cfq registered (default)
+Nis 01 17:48:46 utku2 kernel: io scheduler mq-deadline registered
+Nis 01 17:48:46 utku2 kernel: io scheduler kyber registered
+Nis 01 17:48:46 utku2 kernel: io scheduler bfq registered
+Nis 01 17:48:46 utku2 kernel: pcieport 0000:00:02.2: Signaling PME with IRQ 26
+Nis 01 17:48:46 utku2 kernel: pcieport 0000:00:02.3: Signaling PME with IRQ 27
+Nis 01 17:48:46 utku2 kernel: pcieport 0000:00:03.1: Signaling PME with IRQ 29
+Nis 01 17:48:46 utku2 kernel: pciehp 0000:00:03.1:pcie004: Slot #0 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise- Interlock- NoCompl+ LLActRep+
+Nis 01 17:48:46 utku2 kernel: vesafb: mode is 1366x768x32, linelength=5632, pages=0
+Nis 01 17:48:46 utku2 kernel: vesafb: scrolling: redraw
+Nis 01 17:48:46 utku2 kernel: vesafb: Truecolor: size=0:8:8:8, shift=0:16:8:0
+Nis 01 17:48:46 utku2 kernel: vesafb: framebuffer at 0xe0000000, mapped to 0x000000002e1d99b8, using 4224k, total 4224k
+Nis 01 17:48:46 utku2 kernel: pciehp 0000:00:03.1:pcie004: Slot(0): Card present
+Nis 01 17:48:46 utku2 kernel: Console: switching to colour frame buffer device 170x48
+Nis 01 17:48:46 utku2 kernel: fb0: VESA VGA frame buffer device
+Nis 01 17:48:46 utku2 kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Nis 01 17:48:46 utku2 kernel: rtc_cmos 00:01: RTC can wake from S4
+Nis 01 17:48:46 utku2 kernel: rtc_cmos 00:01: rtc core: registered rtc_cmos as rtc0
+Nis 01 17:48:46 utku2 kernel: rtc_cmos 00:01: alarms up to one month, 114 bytes nvram, hpet irqs
+Nis 01 17:48:46 utku2 kernel: NET: Registered protocol family 10
+Nis 01 17:48:46 utku2 kernel: Segment Routing with IPv6
+Nis 01 17:48:46 utku2 kernel: NET: Registered protocol family 17
+Nis 01 17:48:46 utku2 kernel: RAS: Correctable Errors collector initialized.
+Nis 01 17:48:46 utku2 kernel: microcode: CPU0: patch_level=0x0600611a
+Nis 01 17:48:46 utku2 kernel: microcode: CPU1: patch_level=0x0600611a
+Nis 01 17:48:46 utku2 kernel: microcode: CPU2: patch_level=0x0600611a
+Nis 01 17:48:46 utku2 kernel: microcode: CPU3: patch_level=0x0600611a
+Nis 01 17:48:46 utku2 kernel: microcode: Microcode Update Driver: v2.2.
+Nis 01 17:48:46 utku2 kernel: sched_clock: Marking stable (604547366, 0)->(708407246, -103859880)
+Nis 01 17:48:46 utku2 kernel: registered taskstats version 1
+Nis 01 17:48:46 utku2 kernel: Loading compiled-in X.509 certificates
+Nis 01 17:48:46 utku2 kernel: zswap: loaded using pool lzo/zbud
+Nis 01 17:48:46 utku2 kernel: Key type big_key registered
+Nis 01 17:48:46 utku2 kernel:   Magic number: 15:333:838
+Nis 01 17:48:46 utku2 kernel: rtc_cmos 00:01: setting system clock to 2019-04-01 14:48:35 UTC (1554130115)
+Nis 01 17:48:46 utku2 kernel: Freeing unused kernel memory: 1360K
+Nis 01 17:48:46 utku2 kernel: Write protecting the kernel read-only data: 16384k
+Nis 01 17:48:46 utku2 kernel: Freeing unused kernel memory: 2016K
+Nis 01 17:48:46 utku2 kernel: Freeing unused kernel memory: 1340K
+Nis 01 17:48:46 utku2 kernel: i8042: PNP: PS/2 Controller [PNP0303:KBC0] at 0x60,0x64 irq 1
+Nis 01 17:48:46 utku2 kernel: i8042: PNP: PS/2 appears to have AUX port disabled, if this is incorrect please boot with i8042.nopnp
+Nis 01 17:48:46 utku2 kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Nis 01 17:48:46 utku2 kernel: SCSI subsystem initialized
+Nis 01 17:48:46 utku2 kernel: ACPI: bus type USB registered
+Nis 01 17:48:46 utku2 kernel: usbcore: registered new interface driver usbfs
+Nis 01 17:48:46 utku2 kernel: usbcore: registered new interface driver hub
+Nis 01 17:48:46 utku2 kernel: usbcore: registered new device driver usb
+Nis 01 17:48:46 utku2 kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Nis 01 17:48:46 utku2 kernel: ehci-pci: EHCI PCI platform driver
+Nis 01 17:48:46 utku2 kernel: ehci-pci 0000:00:12.0: EHCI Host Controller
+Nis 01 17:48:46 utku2 kernel: ehci-pci 0000:00:12.0: new USB bus registered, assigned bus number 1
+Nis 01 17:48:46 utku2 kernel: ehci-pci 0000:00:12.0: debug port 2
+Nis 01 17:48:46 utku2 kernel: ehci-pci 0000:00:12.0: irq 18, io mem 0xd156d000
+Nis 01 17:48:46 utku2 kernel: libata version 3.00 loaded.
+Nis 01 17:48:46 utku2 kernel: ehci-pci 0000:00:12.0: USB 2.0 started, EHCI 1.00
+Nis 01 17:48:46 utku2 kernel: hub 1-0:1.0: USB hub found
+Nis 01 17:48:46 utku2 kernel: hub 1-0:1.0: 2 ports detected
+Nis 01 17:48:46 utku2 kernel: xhci_hcd 0000:00:10.0: xHCI Host Controller
+Nis 01 17:48:46 utku2 kernel: xhci_hcd 0000:00:10.0: new USB bus registered, assigned bus number 2
+Nis 01 17:48:46 utku2 kernel: xhci_hcd 0000:00:10.0: hcc params 0x014040c3 hci version 0x100 quirks 0x00000410
+Nis 01 17:48:46 utku2 kernel: hub 2-0:1.0: USB hub found
+Nis 01 17:48:46 utku2 kernel: hub 2-0:1.0: 4 ports detected
+Nis 01 17:48:46 utku2 kernel: xhci_hcd 0000:00:10.0: xHCI Host Controller
+Nis 01 17:48:46 utku2 kernel: xhci_hcd 0000:00:10.0: new USB bus registered, assigned bus number 3
+Nis 01 17:48:46 utku2 kernel: usb usb3: We don't know the algorithms for LPM for this host, disabling LPM.
+Nis 01 17:48:46 utku2 kernel: hub 3-0:1.0: USB hub found
+Nis 01 17:48:46 utku2 kernel: hub 3-0:1.0: 4 ports detected
+Nis 01 17:48:46 utku2 kernel: usb: port power management may be unreliable
+Nis 01 17:48:46 utku2 kernel: ahci 0000:00:11.0: version 3.0
+Nis 01 17:48:46 utku2 kernel: ahci 0000:00:11.0: AHCI 0001.0300 32 slots 1 ports 6 Gbps 0x1 impl SATA mode
+Nis 01 17:48:46 utku2 kernel: ahci 0000:00:11.0: flags: 64bit ncq sntf ilck pm led clo pmp fbs pio slum part 
+Nis 01 17:48:46 utku2 kernel: scsi host0: ahci
+Nis 01 17:48:46 utku2 kernel: ata1: SATA max UDMA/133 abar m1024@0xd156c000 port 0xd156c100 irq 19
+Nis 01 17:48:46 utku2 kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+Nis 01 17:48:46 utku2 kernel: usb 1-1: new high-speed USB device number 2 using ehci-pci
+Nis 01 17:48:46 utku2 kernel: hub 1-1:1.0: USB hub found
+Nis 01 17:48:46 utku2 kernel: hub 1-1:1.0: 4 ports detected
+Nis 01 17:48:46 utku2 kernel: ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+Nis 01 17:48:46 utku2 kernel: ata1.00: ATA-10: WDC WD10SPZX-21Z10T0, 02.01A02, max UDMA/133
+Nis 01 17:48:46 utku2 kernel: ata1.00: 1953525168 sectors, multi 16: LBA48 NCQ (depth 31/32), AA
+Nis 01 17:48:46 utku2 kernel: ata1.00: configured for UDMA/133
+Nis 01 17:48:46 utku2 kernel: scsi 0:0:0:0: Direct-Access     ATA      WDC WD10SPZX-21Z 1A02 PQ: 0 ANSI: 5
+Nis 01 17:48:46 utku2 kernel: sd 0:0:0:0: [sda] 1953525168 512-byte logical blocks: (1.00 TB/932 GiB)
+Nis 01 17:48:46 utku2 kernel: sd 0:0:0:0: [sda] 4096-byte physical blocks
+Nis 01 17:48:46 utku2 kernel: sd 0:0:0:0: [sda] Write Protect is off
+Nis 01 17:48:46 utku2 kernel: sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Nis 01 17:48:46 utku2 kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Nis 01 17:48:46 utku2 kernel:  sda: sda1 sda2 sda3
+Nis 01 17:48:46 utku2 kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+Nis 01 17:48:46 utku2 kernel: usb 1-1.1: new high-speed USB device number 3 using ehci-pci
+Nis 01 17:48:46 utku2 kernel: usb-storage 1-1.1:1.0: USB Mass Storage device detected
+Nis 01 17:48:46 utku2 kernel: scsi host1: usb-storage 1-1.1:1.0
+Nis 01 17:48:46 utku2 kernel: usbcore: registered new interface driver usb-storage
+Nis 01 17:48:46 utku2 kernel: usbcore: registered new interface driver uas
+Nis 01 17:48:46 utku2 kernel: tsc: Refined TSC clocksource calibration: 2495.315 MHz
+Nis 01 17:48:46 utku2 kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x23f7f021988, max_idle_ns: 440795263180 ns
+Nis 01 17:48:46 utku2 kernel: clocksource: Switched to clocksource tsc
+Nis 01 17:48:46 utku2 kernel: usb 1-1.2: new low-speed USB device number 4 using ehci-pci
+Nis 01 17:48:46 utku2 kernel: hidraw: raw HID events driver (C) Jiri Kosina
+Nis 01 17:48:46 utku2 kernel: usbcore: registered new interface driver usbhid
+Nis 01 17:48:46 utku2 kernel: usbhid: USB HID core driver
+Nis 01 17:48:46 utku2 kernel: input:  USB OPTICAL MOUSE as /devices/pci0000:00/0000:00:12.0/usb1/1-1/1-1.2/1-1.2:1.0/0003:0000:3825.0001/input/input1
+Nis 01 17:48:46 utku2 kernel: hid-generic 0003:0000:3825.0001: input,hidraw0: USB HID v1.11 Mouse [ USB OPTICAL MOUSE] on usb-0000:00:12.0-1.2/input0
+Nis 01 17:48:46 utku2 kernel: usb 1-1.3: new full-speed USB device number 5 using ehci-pci
+Nis 01 17:48:46 utku2 kernel: usb 1-1.4: new high-speed USB device number 6 using ehci-pci
+Nis 01 17:48:46 utku2 kernel: EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
+Nis 01 17:48:46 utku2 kernel: random: crng init done
+Nis 01 17:48:46 utku2 kernel: scsi 1:0:0:0: Direct-Access     Generic  Flash Disk       8.07 PQ: 0 ANSI: 4
+Nis 01 17:48:46 utku2 kernel: sd 1:0:0:0: [sdb] 15730688 512-byte logical blocks: (8.05 GB/7.50 GiB)
+Nis 01 17:48:46 utku2 kernel: sd 1:0:0:0: [sdb] Write Protect is off
+Nis 01 17:48:46 utku2 kernel: sd 1:0:0:0: [sdb] Mode Sense: 23 00 00 00
+Nis 01 17:48:46 utku2 kernel: sd 1:0:0:0: [sdb] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+Nis 01 17:48:46 utku2 kernel:  sdb: sdb1
+Nis 01 17:48:46 utku2 kernel: sd 1:0:0:0: [sdb] Attached SCSI removable disk
+Nis 01 17:48:46 utku2 systemd[1]: systemd 241.607-1-manjaro running in system mode. (+PAM +AUDIT -SELINUX -IMA -APPARMOR +SMACK -SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+Nis 01 17:48:46 utku2 systemd[1]: Detected architecture x86-64.
+Nis 01 17:48:46 utku2 systemd[1]: Set hostname to <utku2>.
+Nis 01 17:48:46 utku2 systemd[1]: /usr/lib/systemd/system/teamviewerd.service:8: PIDFile= references path below legacy directory /var/run/, updating /var/run/teamviewerd.pid → /run/teamviewerd.pid; please update the unit file accordingly.
+Nis 01 17:48:46 utku2 systemd[1]: /usr/lib/systemd/system/smb.service:9: PIDFile= references path below legacy directory /var/run/, updating /var/run/smbd.pid → /run/smbd.pid; please update the unit file accordingly.
+Nis 01 17:48:46 utku2 systemd[1]: /usr/lib/systemd/system/winbind.service:8: PIDFile= references path below legacy directory /var/run/, updating /var/run/winbindd.pid → /run/winbindd.pid; please update the unit file accordingly.
+Nis 01 17:48:46 utku2 systemd[1]: /usr/lib/systemd/system/nmb.service:9: PIDFile= references path below legacy directory /var/run/, updating /var/run/nmbd.pid → /run/nmbd.pid; please update the unit file accordingly.
+Nis 01 17:48:46 utku2 systemd[1]: Reached target Login Prompts.
+Nis 01 17:48:46 utku2 systemd[1]: Listening on Device-mapper event daemon FIFOs.
+Nis 01 17:48:46 utku2 systemd[1]: Created slice User and Session Slice.
+Nis 01 17:48:46 utku2 systemd[1]: Started Create list of required static device nodes for the current kernel.
+Nis 01 17:48:46 utku2 systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 198 (systemd-binfmt)
+Nis 01 17:48:46 utku2 systemd[1]: Mounting Arbitrary Executable File Formats File System...
+Nis 01 17:48:46 utku2 systemd[1]: Mounted Arbitrary Executable File Formats File System.
+Nis 01 17:48:46 utku2 kernel: EXT4-fs (sda3): re-mounted. Opts: (null)
+Nis 01 17:48:46 utku2 systemd[1]: Started Remount Root and Kernel File Systems.
+Nis 01 17:48:46 utku2 systemd-journald[201]: Journal started
+Nis 01 17:48:46 utku2 systemd-journald[201]: Runtime journal (/run/log/journal/532485b3fd6e468293c927b7e21ba911) is 8.0M, max 349.7M, 341.7M free.
+Nis 01 17:48:46 utku2 systemd-modules-load[203]: Inserted module 'crypto_user'
+Nis 01 17:48:46 utku2 systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+Nis 01 17:48:46 utku2 systemd[1]: Condition check resulted in First Boot Wizard being skipped.
+Nis 01 17:48:46 utku2 systemd[1]: Condition check resulted in Create System Users being skipped.
+Nis 01 17:48:46 utku2 systemd[1]: Starting Create Static Device Nodes in /dev...
+Nis 01 17:48:46 utku2 systemd[1]: Starting Load/Save Random Seed...
+Nis 01 17:48:46 utku2 systemd[1]: Started Set Up Additional Binary Formats.
+Nis 01 17:48:46 utku2 systemd[1]: Started udev Coldplug all Devices.
+Nis 01 17:48:46 utku2 systemd[1]: Starting Flush Journal to Persistent Storage...
+Nis 01 17:48:47 utku2 systemd-journald[201]: Time spent on flushing to /var is 4.061386s for 688 entries.
+Nis 01 17:48:47 utku2 systemd-journald[201]: System journal (/var/log/journal/532485b3fd6e468293c927b7e21ba911) is 3.0G, max 4.0G, 935.6M free.
+Nis 01 17:49:04 utku2 kernel: sd 0:0:0:0: Attached scsi generic sg0 type 0
+Nis 01 17:49:04 utku2 kernel: sd 1:0:0:0: Attached scsi generic sg1 type 0
+Nis 01 17:49:04 utku2 kernel: Linux agpgart interface v0.103
+Nis 01 17:49:04 utku2 kernel: vboxvideo: module is from the staging directory, the quality is unknown, you have been warned.
+Nis 01 17:49:04 utku2 kernel: cryptd: max_cpu_qlen set to 1000
+Nis 01 17:49:04 utku2 kernel: acpi_cpufreq: overriding BIOS provided _PSD data
+Nis 01 17:49:04 utku2 kernel: input: PC Speaker as /devices/platform/pcspkr/input/input2
+Nis 01 17:49:04 utku2 kernel: ACPI: Video Device [VGA] (multi-head: yes  rom: no  post: no)
+Nis 01 17:49:04 utku2 kernel: acpi device:00: registered as cooling_device4
+Nis 01 17:49:04 utku2 kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input3
+Nis 01 17:49:04 utku2 kernel: ACPI: Video Device [VGA2] (multi-head: yes  rom: no  post: no)
+Nis 01 17:49:04 utku2 kernel: acpi device:0a: registered as cooling_device5
+Nis 01 17:49:04 utku2 kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:09/LNXVIDEO:02/input/input4
+Nis 01 17:49:04 utku2 kernel: AVX2 version of gcm_enc/dec engaged.
+Nis 01 17:49:04 utku2 kernel: AES CTR mode by8 optimization enabled
+Nis 01 17:49:04 utku2 kernel: tpm_crb MSFT0101:00: can't request region for resource [mem 0xbfbb9000-0xbfbbcfff]
+Nis 01 17:49:04 utku2 kernel: tpm_crb: probe of MSFT0101:00 failed with error -16
+Nis 01 17:49:04 utku2 kernel: ACPI: AC Adapter [ACAD] (on-line)
+Nis 01 17:49:04 utku2 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input5
+Nis 01 17:49:04 utku2 kernel: ACPI: Power Button [PWRB]
+Nis 01 17:49:04 utku2 kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input6
+Nis 01 17:49:04 utku2 kernel: ACPI: Sleep Button [SLPB]
+Nis 01 17:49:04 utku2 kernel: input: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input7
+Nis 01 17:49:04 utku2 kernel: ACPI: Lid Switch [LID]
+Nis 01 17:49:04 utku2 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input8
+Nis 01 17:49:04 utku2 kernel: ACPI: Power Button [PWRF]
+Nis 01 17:49:04 utku2 kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Nis 01 17:49:04 utku2 kernel: ACPI: Battery Slot [BAT1] (battery present)
+Nis 01 17:49:04 utku2 kernel: piix4_smbus 0000:00:14.0: SMBus Host Controller at 0xb00, revision 0
+Nis 01 17:49:04 utku2 kernel: piix4_smbus 0000:00:14.0: Using register 0x02 for SMBus port selection
+Nis 01 17:49:04 utku2 kernel: sp5100_tco: SP5100/SB800 TCO WatchDog Timer Driver
+Nis 01 17:49:04 utku2 kernel: sp5100-tco sp5100-tco: I/O address 0x0cd6 already in use
+Nis 01 17:49:04 utku2 kernel: sp5100-tco: probe of sp5100-tco failed with error -16
+Nis 01 17:49:04 utku2 kernel: kvm: Nested Virtualization enabled
+Nis 01 17:49:04 utku2 kernel: kvm: Nested Paging enabled
+Nis 01 17:49:04 utku2 kernel: SVM: Virtual GIF supported
+Nis 01 17:49:04 utku2 kernel: acer_wmi: Acer Laptop ACPI-WMI Extras
+Nis 01 17:49:04 utku2 kernel: acer_wmi: Function bitmap for Communication Button: 0x801
+Nis 01 17:49:04 utku2 kernel: input: Acer WMI hotkeys as /devices/virtual/input/input9
+Nis 01 17:49:04 utku2 kernel: [drm] amdgpu kernel modesetting enabled.
+Nis 01 17:49:04 utku2 kernel: vga_switcheroo: detected switching method \_SB_.PCI0.VGA_.ATPX handle
+Nis 01 17:49:04 utku2 kernel: ATPX version 1, functions 0x00000003
+Nis 01 17:49:04 utku2 kernel: ATPX Hybrid Graphics
+Nis 01 17:49:04 utku2 kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Nis 01 17:49:04 utku2 kernel: cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Nis 01 17:49:04 utku2 kernel: AMD IOMMUv2 driver by Joerg Roedel <jroedel@suse.de>
+Nis 01 17:49:04 utku2 kernel: Intel(R) Wireless WiFi driver for Linux
+Nis 01 17:49:04 utku2 kernel: Copyright(c) 2003- 2015 Intel Corporation
+Nis 01 17:49:04 utku2 kernel: iwlwifi 0000:02:00.0: loaded firmware version 29.1044073957.0 op_mode iwlmvm
+Nis 01 17:49:04 utku2 kernel: Parsing CRAT table with 1 nodes
+Nis 01 17:49:04 utku2 kernel: Creating topology SYSFS entries
+Nis 01 17:49:04 utku2 kernel: Topology: Add APU node [0x0:0x0]
+Nis 01 17:49:04 utku2 kernel: Finished initializing topology
+Nis 01 17:49:04 utku2 kernel: kfd kfd: Initialized module
+Nis 01 17:49:04 utku2 kernel: checking generic (e0000000 420000) vs hw (e0000000 10000000)
+Nis 01 17:49:04 utku2 kernel: fb: switching to amdgpudrmfb from VESA VGA
+Nis 01 17:49:04 utku2 kernel: Console: switching to colour dummy device 80x25
+Nis 01 17:49:04 utku2 kernel: [drm] initializing kernel modesetting (CARRIZO 0x1002:0x9874 0x1025:0x1201 0xCA).
+Nis 01 17:49:04 utku2 kernel: [drm] register mmio base: 0xD1500000
+Nis 01 17:49:04 utku2 kernel: [drm] register mmio size: 262144
+Nis 01 17:49:04 utku2 kernel: [drm] add ip block number 0 <vi_common>
+Nis 01 17:49:04 utku2 kernel: [drm] add ip block number 1 <gmc_v8_0>
+Nis 01 17:49:04 utku2 kernel: [drm] add ip block number 2 <cz_ih>
+Nis 01 17:49:04 utku2 kernel: [drm] add ip block number 3 <amdgpu_powerplay>
+Nis 01 17:49:04 utku2 kernel: [drm] add ip block number 4 <dm>
+Nis 01 17:49:04 utku2 kernel: [drm] add ip block number 5 <gfx_v8_0>
+Nis 01 17:49:04 utku2 kernel: [drm] add ip block number 6 <sdma_v3_0>
+Nis 01 17:49:04 utku2 kernel: [drm] add ip block number 7 <uvd_v6_0>
+Nis 01 17:49:04 utku2 kernel: [drm] add ip block number 8 <vce_v3_0>
+Nis 01 17:49:04 utku2 kernel: [drm] add ip block number 9 <acp_ip>
+Nis 01 17:49:04 utku2 kernel: [drm] UVD is enabled in physical mode
+Nis 01 17:49:04 utku2 kernel: [drm] VCE enabled in physical mode
+Nis 01 17:49:04 utku2 kernel: [drm] BIOS signature incorrect 0 0
+Nis 01 17:49:04 utku2 kernel: resource sanity check: requesting [mem 0x000c0000-0x000dffff], which spans more than PCI Bus 0000:00 [mem 0x000c0000-0x000c3fff window]
+Nis 01 17:49:04 utku2 kernel: caller pci_map_rom+0x58/0xf0 mapping multiple BARs
+Nis 01 17:49:04 utku2 kernel: ATOM BIOS: 113-C91400-007
+Nis 01 17:49:04 utku2 kernel: [drm] vm size is 64 GB, 2 levels, block size is 10-bit, fragment size is 9-bit
+Nis 01 17:49:04 utku2 kernel: amdgpu 0000:00:01.0: VRAM: 1024M 0x000000F400000000 - 0x000000F43FFFFFFF (1024M used)
+Nis 01 17:49:04 utku2 kernel: amdgpu 0000:00:01.0: GTT: 1024M 0x0000000000000000 - 0x000000003FFFFFFF
+Nis 01 17:49:04 utku2 kernel: [drm] Detected VRAM RAM=1024M, BAR=1024M
+Nis 01 17:49:04 utku2 kernel: [drm] RAM width 64bits UNKNOWN
+Nis 01 17:49:04 utku2 kernel: [TTM] Zone  kernel: Available graphics memory: 3581410 kiB
+Nis 01 17:49:04 utku2 kernel: [TTM] Zone   dma32: Available graphics memory: 2097152 kiB
+Nis 01 17:49:04 utku2 kernel: [TTM] Initializing pool allocator
+Nis 01 17:49:04 utku2 kernel: [TTM] Initializing DMA pool allocator
+Nis 01 17:49:04 utku2 kernel: [drm] amdgpu: 1024M of VRAM memory ready
+Nis 01 17:49:04 utku2 kernel: [drm] amdgpu: 3072M of GTT memory ready.
+Nis 01 17:49:04 utku2 kernel: [drm] GART: num cpu pages 262144, num gpu pages 262144
+Nis 01 17:49:04 utku2 kernel: [drm] PCIE GART of 1024M enabled (table at 0x000000F400040000).
+Nis 01 17:49:04 utku2 kernel: iwlwifi 0000:02:00.0: Detected Intel(R) Dual Band Wireless AC 3168, REV=0x220
+Nis 01 17:49:04 utku2 kernel: iwlwifi 0000:02:00.0: base HW address: 90:61:ae:30:14:39
+Nis 01 17:49:04 utku2 kernel: ieee80211 phy0: Selected rate control algorithm 'iwl-mvm-rs'
+Nis 01 17:49:04 utku2 kernel: thermal thermal_zone0: failed to read out thermal zone (-61)
+Nis 01 17:49:04 utku2 kernel: iwlwifi 0000:02:00.0 wlp2s0: renamed from wlan0
+Nis 01 17:49:04 utku2 kernel: mousedev: PS/2 mouse device common for all mice
+Nis 01 17:49:04 utku2 kernel: media: Linux media interface: v0.10
+Nis 01 17:49:04 utku2 kernel: Linux video capture interface: v2.00
+Nis 01 17:49:04 utku2 kernel: uvcvideo: Found UVC 1.00 device HD WebCam (0408:a060)
+Nis 01 17:49:04 utku2 kernel: uvcvideo 1-1.4:1.0: Entity type for entity Extension 4 was not initialized!
+Nis 01 17:49:04 utku2 kernel: uvcvideo 1-1.4:1.0: Entity type for entity Processing 2 was not initialized!
+Nis 01 17:49:04 utku2 kernel: uvcvideo 1-1.4:1.0: Entity type for entity Camera 1 was not initialized!
+Nis 01 17:49:04 utku2 kernel: input: HD WebCam: HD WebCam as /devices/pci0000:00/0000:00:12.0/usb1/1-1/1-1.4/1-1.4:1.0/input/input10
+Nis 01 17:49:04 utku2 kernel: usbcore: registered new interface driver uvcvideo
+Nis 01 17:49:04 utku2 kernel: USB Video Class driver (1.1.1)
+Nis 01 17:49:04 utku2 kernel: Bluetooth: Core ver 2.22
+Nis 01 17:49:04 utku2 kernel: NET: Registered protocol family 31
+Nis 01 17:49:04 utku2 kernel: Bluetooth: HCI device and connection manager initialized
+Nis 01 17:49:04 utku2 kernel: Bluetooth: HCI socket layer initialized
+Nis 01 17:49:04 utku2 kernel: Bluetooth: L2CAP socket layer initialized
+Nis 01 17:49:04 utku2 kernel: Bluetooth: SCO socket layer initialized
+Nis 01 17:49:04 utku2 kernel: [drm] Found UVD firmware Version: 1.91 Family ID: 11
+Nis 01 17:49:04 utku2 kernel: [drm] UVD ENC is disabled
+Nis 01 17:49:04 utku2 kernel: [drm] Found VCE firmware Version: 52.4 Binary ID: 3
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB: values for Engine clock
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         30000
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         48000
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         53334
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         57600
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         62609
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         68572
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         72000
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         75790
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB: Validation clocks:
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:    engine_max_clock: 75790
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:    memory_max_clock: 93300
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:    level           : 0
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB: values for Display clock
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         30000
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         40000
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         49656
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         62609
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         68572
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         75790
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         80000
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         84706
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB: Validation clocks:
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:    engine_max_clock: 75790
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:    memory_max_clock: 93300
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:    level           : 0
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB: values for Memory clock
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         66700
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:         93300
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB: Validation clocks:
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:    engine_max_clock: 75790
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:    memory_max_clock: 93300
+Nis 01 17:49:04 utku2 kernel: [drm] DM_PPLIB:    level           : 0
+Nis 01 17:49:04 utku2 kernel: [drm:construct [amdgpu]] *ERROR* construct: Invalid Connector ObjectID from Adapter Service for connector index:2! type 0 expected 3
+Nis 01 17:49:04 utku2 kernel: usbcore: registered new interface driver btusb
+Nis 01 17:49:04 utku2 kernel: Bluetooth: hci0: read Intel version: 370810225019140f00
+Nis 01 17:49:04 utku2 kernel: Bluetooth: hci0: Intel Bluetooth firmware file: intel/ibt-hw-37.8.10-fw-22.50.19.14.f.bseq
+Nis 01 17:49:04 utku2 kernel: [drm:hwss_wait_for_blank_complete [amdgpu]] *ERROR* DC: failed to blank crtc!
+Nis 01 17:49:04 utku2 kernel: [drm] Display Core initialized with v3.1.37!
+Nis 01 17:49:04 utku2 kernel: [drm] SADs count is: -2, don't need to read it
+Nis 01 17:49:04 utku2 kernel: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+Nis 01 17:49:04 utku2 kernel: [drm] Driver supports precise vblank timestamp query.
+Nis 01 17:49:04 utku2 kernel: Bluetooth: hci0: Intel firmware patch completed and activated
+Nis 01 17:49:04 utku2 kernel: EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: (null)
+Nis 01 17:49:04 utku2 kernel: [drm] UVD initialized successfully.
+Nis 01 17:49:05 utku2 kernel: [drm] VCE initialized successfully.
+Nis 01 17:49:05 utku2 kernel: kfd kfd: Allocated 3969056 bytes on gart
+Nis 01 17:49:05 utku2 kernel: Topology: Add APU node [0x9874:0x1002]
+Nis 01 17:49:05 utku2 kernel: kfd kfd: added device 1002:9874
+Nis 01 17:49:05 utku2 kernel: [drm] fb mappable at 0x1FF619000
+Nis 01 17:49:05 utku2 kernel: [drm] vram apper at 0x1FF000000
+Nis 01 17:49:05 utku2 kernel: [drm] size 4325376
+Nis 01 17:49:05 utku2 kernel: [drm] fb depth is 24
+Nis 01 17:49:05 utku2 kernel: [drm]    pitch is 5632
+Nis 01 17:49:05 utku2 kernel: fbcon: amdgpudrmfb (fb0) is primary device
+Nis 01 17:49:05 utku2 kernel: Console: switching to colour frame buffer device 170x48
+Nis 01 17:49:05 utku2 kernel: amdgpu 0000:00:01.0: fb0: amdgpudrmfb frame buffer device
+Nis 01 17:49:05 utku2 kernel: [drm] Initialized amdgpu 3.25.0 20150101 for 0000:00:01.0 on minor 0
+Nis 01 17:49:05 utku2 kernel: snd_hda_intel 0000:00:01.1: Force to non-snoop mode
+Nis 01 17:49:05 utku2 kernel: [drm] initializing kernel modesetting (POLARIS12 0x1002:0x699F 0x1025:0x1210 0xC3).
+Nis 01 17:49:05 utku2 kernel: [drm] register mmio base: 0xD1200000
+Nis 01 17:49:05 utku2 kernel: [drm] register mmio size: 262144
+Nis 01 17:49:05 utku2 kernel: [drm] add ip block number 0 <vi_common>
+Nis 01 17:49:05 utku2 kernel: [drm] add ip block number 1 <gmc_v8_0>
+Nis 01 17:49:05 utku2 kernel: [drm] add ip block number 2 <tonga_ih>
+Nis 01 17:49:05 utku2 kernel: [drm] add ip block number 3 <amdgpu_powerplay>
+Nis 01 17:49:05 utku2 kernel: [drm] add ip block number 4 <dm>
+Nis 01 17:49:05 utku2 kernel: [drm] add ip block number 5 <gfx_v8_0>
+Nis 01 17:49:05 utku2 kernel: [drm] add ip block number 6 <sdma_v3_0>
+Nis 01 17:49:05 utku2 kernel: [drm] add ip block number 7 <uvd_v6_0>
+Nis 01 17:49:05 utku2 kernel: [drm] add ip block number 8 <vce_v3_0>
+Nis 01 17:49:05 utku2 kernel: [drm] probing gen 2 caps for device 1022:157c = 733c81/e
+Nis 01 17:49:05 utku2 kernel: [drm] probing mlw for device 1022:157c = 733c81
+Nis 01 17:49:05 utku2 kernel: [drm] UVD is enabled in VM mode
+Nis 01 17:49:05 utku2 kernel: [drm] UVD ENC is enabled in VM mode
+Nis 01 17:49:05 utku2 kernel: [drm] VCE enabled in VM mode
+Nis 01 17:49:05 utku2 kernel: vga_switcheroo: enabled
+Nis 01 17:49:05 utku2 kernel: ATOM BIOS: SWBRT23054.001
+Nis 01 17:49:05 utku2 kernel: [drm] GPU posting now...
+Nis 01 17:49:05 utku2 kernel: [drm] vm size is 64 GB, 2 levels, block size is 10-bit, fragment size is 9-bit
+Nis 01 17:49:05 utku2 kernel: amdgpu 0000:03:00.0: VRAM: 2048M 0x000000F400000000 - 0x000000F47FFFFFFF (2048M used)
+Nis 01 17:49:05 utku2 kernel: amdgpu 0000:03:00.0: GTT: 256M 0x0000000000000000 - 0x000000000FFFFFFF
+Nis 01 17:49:05 utku2 kernel: [drm] Detected VRAM RAM=2048M, BAR=256M
+Nis 01 17:49:05 utku2 kernel: [drm] RAM width 128bits GDDR5
+Nis 01 17:49:05 utku2 kernel: [drm] amdgpu: 2048M of VRAM memory ready
+Nis 01 17:49:05 utku2 kernel: [drm] amdgpu: 3072M of GTT memory ready.
+Nis 01 17:49:05 utku2 kernel: [drm] GART: num cpu pages 65536, num gpu pages 65536
+Nis 01 17:49:05 utku2 kernel: [drm] PCIE GART of 256M enabled (table at 0x000000F400040000).
+Nis 01 17:49:05 utku2 kernel: [drm] Chained IB support enabled!
+Nis 01 17:49:05 utku2 kernel: [drm] Found UVD firmware Version: 1.130 Family ID: 16
+Nis 01 17:49:05 utku2 kernel: [drm] Found VCE firmware Version: 53.26 Binary ID: 3
+Nis 01 17:49:05 utku2 kernel: amdgpu: [powerplay] Voltage value looks like a Leakage ID but it's not patched 
+Nis 01 17:49:05 utku2 kernel: amdgpu: [powerplay] Voltage value looks like a Leakage ID but it's not patched 
+Nis 01 17:49:05 utku2 kernel: amdgpu: [powerplay] Voltage value looks like a Leakage ID but it's not patched 
+Nis 01 17:49:05 utku2 kernel: amdgpu: [powerplay] Voltage value looks like a Leakage ID but it's not patched 
+Nis 01 17:49:05 utku2 kernel: amdgpu: [powerplay] Voltage value looks like a Leakage ID but it's not patched 
+Nis 01 17:49:05 utku2 kernel: amdgpu: [powerplay] Voltage value looks like a Leakage ID but it's not patched 
+Nis 01 17:49:05 utku2 kernel: amdgpu: [powerplay] Voltage value looks like a Leakage ID but it's not patched 
+Nis 01 17:49:05 utku2 kernel: input: HDA ATI HDMI HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:01.1/sound/card0/input11
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB: values for Engine clock
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:         21400
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:         55100
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:         73400
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:         92100
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:         98000
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:         104600
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB: Validation clocks:
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:    engine_max_clock: 104600
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:    memory_max_clock: 125000
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:    level           : 0
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB: values for Memory clock
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:         30000
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:         62500
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:         125000
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB: Validation clocks:
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:    engine_max_clock: 104600
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:    memory_max_clock: 125000
+Nis 01 17:49:05 utku2 kernel: [drm] DM_PPLIB:    level           : 0
+Nis 01 17:49:05 utku2 kernel: [drm:dc_create [amdgpu]] *ERROR* DC: Number of connectors is zero!
+Nis 01 17:49:05 utku2 kernel: [drm] Display Core initialized with v3.1.37!
+Nis 01 17:49:05 utku2 kernel: [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+Nis 01 17:49:05 utku2 kernel: [drm] Driver supports precise vblank timestamp query.
+Nis 01 17:49:05 utku2 kernel: snd_hda_codec_realtek hdaudioC1D0: autoconfig for ALC255: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:speaker
+Nis 01 17:49:05 utku2 kernel: snd_hda_codec_realtek hdaudioC1D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+Nis 01 17:49:05 utku2 kernel: snd_hda_codec_realtek hdaudioC1D0:    hp_outs=1 (0x21/0x0/0x0/0x0/0x0)
+Nis 01 17:49:05 utku2 kernel: snd_hda_codec_realtek hdaudioC1D0:    mono: mono_out=0x0
+Nis 01 17:49:05 utku2 kernel: snd_hda_codec_realtek hdaudioC1D0:    inputs:
+Nis 01 17:49:05 utku2 kernel: snd_hda_codec_realtek hdaudioC1D0:      Headset Mic=0x19
+Nis 01 17:49:05 utku2 kernel: snd_hda_codec_realtek hdaudioC1D0:      Internal Mic=0x12
+Nis 01 17:49:05 utku2 kernel: [drm] UVD and UVD ENC initialized successfully.
+Nis 01 17:49:05 utku2 kernel: input: HDA Digital PCBeep as /devices/pci0000:00/0000:00:09.2/sound/card1/input12
+Nis 01 17:49:05 utku2 kernel: input: HD-Audio Generic Front Headphone as /devices/pci0000:00/0000:00:09.2/sound/card1/input13
+Nis 01 17:49:05 utku2 kernel: [drm] VCE initialized successfully.
+Nis 01 17:49:05 utku2 kernel: EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+Nis 01 17:49:05 utku2 kernel: [drm] Initialized amdgpu 3.25.0 20150101 for 0000:03:00.0 on minor 1
+Nis 01 17:49:05 utku2 kernel: Adding 4194292k swap on /home/swap.  Priority:-2 extents:9 across:6717428k FS
+Nis 01 17:48:58 utku2 mtp-probe[427]: checking bus 1, device 3: "/sys/devices/pci0000:00/0000:00:12.0/usb1/1-1/1-1.1"
+Nis 01 17:48:47 utku2 systemd-modules-load[203]: Inserted module 'sg'
+Nis 01 17:48:58 utku2 mtp-probe[417]: checking bus 1, device 4: "/sys/devices/pci0000:00/0000:00:12.0/usb1/1-1/1-1.2"
+Nis 01 17:48:47 utku2 systemd[1]: Started LVM2 metadata daemon.
+Nis 01 17:48:58 utku2 mtp-probe[424]: checking bus 1, device 6: "/sys/devices/pci0000:00/0000:00:12.0/usb1/1-1/1-1.4"
+Nis 01 17:48:47 utku2 systemd-modules-load[203]: Failed to find module 'vboxguest'
+Nis 01 17:48:58 utku2 mtp-probe[427]: bus: 1, device: 3 was not an MTP device
+Nis 01 17:48:47 utku2 systemd-modules-load[203]: Failed to find module 'vboxsf'
+Nis 01 17:48:58 utku2 mtp-probe[417]: bus: 1, device: 4 was not an MTP device
+Nis 01 17:48:47 utku2 systemd[1]: Started Load/Save Random Seed.
+Nis 01 17:48:58 utku2 mtp-probe[424]: bus: 1, device: 6 was not an MTP device
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Inserted module 'vboxvideo'
+Nis 01 17:49:05 utku2 crond[677]: (CRON) STARTUP (1.5.2)
+Nis 01 17:49:06 utku2 ufw-init[232]: Skip starting firewall: ufw (not enabled)
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxguest'
+Nis 01 17:49:05 utku2 crond[677]: (CRON) INFO (Syslog will be used instead of sendmail.)
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxsf'
+Nis 01 17:49:05 utku2 crond[677]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 64% if used.)
+Nis 01 17:49:06 utku2 systemd-fsck[599]: /dev/sda1: clean, 1704814/44253184 files, 162899802/177008640 blocks
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxdrv'
+Nis 01 17:49:05 utku2 crond[677]: (CRON) INFO (running with inotify support)
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxnetadp'
+Nis 01 17:49:05 utku2 avahi-daemon[679]: Found user 'avahi' (UID 978) and group 'avahi' (GID 978).
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxnetflt'
+Nis 01 17:49:06 utku2 bluetoothd[678]: Bluetooth daemon 5.50
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxpci'
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxsf'
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxdrv'
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxnetadp'
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxnetflt'
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxpci'
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Inserted module 'uinput'
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxguest'
+Nis 01 17:49:06 utku2 sysctl[671]: kernel.random.write_wakeup_threshold = 1024
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxsf'
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxdrv'
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxpci'
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxnetadp'
+Nis 01 17:48:49 utku2 systemd-modules-load[203]: Failed to find module 'vboxnetflt'
+Nis 01 17:48:49 utku2 systemd[1]: systemd-modules-load.service: Main process exited, code=exited, status=1/FAILURE
+Nis 01 17:48:49 utku2 systemd[1]: systemd-modules-load.service: Failed with result 'exit-code'.
+Nis 01 17:48:49 utku2 systemd[1]: Failed to start Load Kernel Modules.
+Nis 01 17:48:49 utku2 systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+Nis 01 17:48:49 utku2 systemd[1]: Mounting Kernel Configuration File System...
+Nis 01 17:48:49 utku2 systemd[1]: Starting Apply Kernel Variables...
+Nis 01 17:48:49 utku2 systemd[1]: Mounted Kernel Configuration File System.
+Nis 01 17:48:49 utku2 systemd[1]: Started Create Static Device Nodes in /dev.
+Nis 01 17:48:49 utku2 systemd[1]: Starting udev Kernel Device Manager...
+Nis 01 17:48:50 utku2 systemd-sysctl[225]: Couldn't write '1' to 'fs/protected_regular', ignoring: No such file or directory
+Nis 01 17:48:50 utku2 systemd-sysctl[225]: Couldn't write '1' to 'fs/protected_fifos', ignoring: No such file or directory
+Nis 01 17:48:50 utku2 systemd[1]: Started Apply Kernel Variables.
+Nis 01 17:48:50 utku2 systemd[1]: Starting CLI Netfilter Manager...
+Nis 01 17:48:54 utku2 systemd[1]: Started CLI Netfilter Manager.
+Nis 01 17:48:54 utku2 systemd[1]: Started udev Kernel Device Manager.
+Nis 01 17:48:54 utku2 systemd-udevd[256]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nis 01 17:48:55 utku2 systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Nis 01 17:48:56 utku2 systemd[1]: Starting Load/Save RF Kill Switch Status...
+Nis 01 17:48:56 utku2 systemd[1]: Found device WDC_WD10SPZX-21Z10T0 2.
+Nis 01 17:48:57 utku2 systemd-udevd[256]: Process '/usr/bin/set-wireless-regdom' failed with exit code 1.
+Nis 01 17:48:57 utku2 systemd[1]: Started Load/Save RF Kill Switch Status.
+Nis 01 17:48:57 utku2 systemd-udevd[254]: Process '/usr/bin/tlp auto' failed with exit code 4.
+Nis 01 17:48:57 utku2 systemd[1]: Found device WDC_WD10SPZX-21Z10T0 1.
+Nis 01 17:48:58 utku2 systemd-udevd[254]: Using default interface naming scheme 'v240'.
+Nis 01 17:48:58 utku2 systemd-udevd[254]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Nis 01 17:48:58 utku2 systemd-udevd[277]: Using default interface naming scheme 'v240'.
+Nis 01 17:48:59 utku2 systemd[1]: Started Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+Nis 01 17:48:59 utku2 systemd[1]: Reached target Local File Systems (Pre).
+Nis 01 17:48:59 utku2 systemd[1]: Condition check resulted in Virtual Machine and Container Storage (Compatibility) being skipped.
+Nis 01 17:48:59 utku2 systemd[1]: Starting File System Check on /dev/disk/by-uuid/63450211-8dcb-4c6e-8bc6-01e4eafa6707...
+Nis 01 17:48:59 utku2 systemd[1]: Mounting /mnt/sda2...
+Nis 01 17:49:00 utku2 systemd[1]: Mounted /mnt/sda2.
+Nis 01 17:49:00 utku2 systemd[1]: Starting Load Kernel Modules...
+Nis 01 17:49:00 utku2 systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+Nis 01 17:49:00 utku2 systemd[1]: Condition check resulted in First Boot Wizard being skipped.
+Nis 01 17:49:00 utku2 systemd[1]: Condition check resulted in Create System Users being skipped.
+Nis 01 17:49:00 utku2 systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxguest'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxsf'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxguest'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxsf'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxdrv'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxnetadp'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxnetflt'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxpci'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxsf'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxdrv'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxnetadp'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxnetflt'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxpci'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxguest'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxsf'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxdrv'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxpci'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxnetadp'
+Nis 01 17:49:00 utku2 systemd-modules-load[616]: Failed to find module 'vboxnetflt'
+Nis 01 17:49:00 utku2 systemd[1]: systemd-modules-load.service: Main process exited, code=exited, status=1/FAILURE
+Nis 01 17:49:00 utku2 systemd[1]: systemd-modules-load.service: Failed with result 'exit-code'.
+Nis 01 17:49:00 utku2 systemd[1]: Failed to start Load Kernel Modules.
+Nis 01 17:49:00 utku2 systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+Nis 01 17:49:01 utku2 systemd[1]: Started File System Check on /dev/disk/by-uuid/63450211-8dcb-4c6e-8bc6-01e4eafa6707.
+Nis 01 17:49:01 utku2 systemd[1]: Mounting /home...
+Nis 01 17:49:01 utku2 systemd[1]: Condition check resulted in First Boot Wizard being skipped.
+Nis 01 17:49:01 utku2 systemd[1]: Condition check resulted in Create System Users being skipped.
+Nis 01 17:49:01 utku2 systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+Nis 01 17:49:01 utku2 systemd[1]: Starting Load Kernel Modules...
+Nis 01 17:49:01 utku2 systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxguest'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxsf'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxguest'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxsf'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxdrv'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxnetadp'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxnetflt'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxpci'
+Nis 01 17:49:07 utku2 haveged[675]: haveged: listening socket at 3
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxsf'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxdrv'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxnetadp'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxnetflt'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxpci'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxguest'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxsf'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxdrv'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxpci'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxnetadp'
+Nis 01 17:49:01 utku2 systemd-modules-load[651]: Failed to find module 'vboxnetflt'
+Nis 01 17:49:01 utku2 systemd[1]: systemd-modules-load.service: Main process exited, code=exited, status=1/FAILURE
+Nis 01 17:49:01 utku2 systemd[1]: systemd-modules-load.service: Failed with result 'exit-code'.
+Nis 01 17:49:01 utku2 systemd[1]: Failed to start Load Kernel Modules.
+Nis 01 17:49:01 utku2 systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+Nis 01 17:49:02 utku2 systemd[1]: Mounted /home.
+Nis 01 17:49:02 utku2 systemd[1]: Activating swap /home/swap...
+Nis 01 17:49:02 utku2 systemd[1]: Created slice system-systemd\x2dbacklight.slice.
+Nis 01 17:49:02 utku2 systemd[1]: Starting Load/Save Screen Backlight Brightness of backlight:acpi_video0...
+Nis 01 17:49:02 utku2 systemd[1]: Starting Load/Save Screen Backlight Brightness of backlight:amdgpu_bl0...
+Nis 01 17:49:02 utku2 systemd[1]: Starting Load/Save Screen Backlight Brightness of backlight:acpi_video1...
+Nis 01 17:49:02 utku2 systemd[1]: Activated swap /home/swap.
+Nis 01 17:49:02 utku2 systemd[1]: Reached target Swap.
+Nis 01 17:49:02 utku2 systemd[1]: Mounting Temporary Directory (/tmp)...
+Nis 01 17:49:02 utku2 systemd[1]: Mounted Temporary Directory (/tmp).
+Nis 01 17:49:02 utku2 systemd[1]: Reached target Local File Systems.
+Nis 01 17:49:02 utku2 systemd[1]: Condition check resulted in Rebuild Journal Catalog being skipped.
+Nis 01 17:49:02 utku2 systemd[1]: Condition check resulted in Rebuild Dynamic Linker Cache being skipped.
+Nis 01 17:49:02 utku2 systemd[1]: Condition check resulted in Update is Completed being skipped.
+Nis 01 17:49:02 utku2 systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+Nis 01 17:49:02 utku2 systemd-backlight[657]: Failed to get backlight or LED device 'backlight:acpi_video0': No such device
+Nis 01 17:49:02 utku2 systemd[1]: systemd-backlight@backlight:acpi_video0.service: Main process exited, code=exited, status=1/FAILURE
+Nis 01 17:49:02 utku2 systemd[1]: systemd-backlight@backlight:acpi_video0.service: Failed with result 'exit-code'.
+Nis 01 17:49:02 utku2 systemd-backlight[659]: Failed to get backlight or LED device 'backlight:acpi_video1': No such device
+Nis 01 17:49:02 utku2 systemd[1]: Failed to start Load/Save Screen Backlight Brightness of backlight:acpi_video0.
+Nis 01 17:49:02 utku2 systemd[1]: systemd-backlight@backlight:acpi_video1.service: Main process exited, code=exited, status=1/FAILURE
+Nis 01 17:49:02 utku2 systemd[1]: systemd-backlight@backlight:acpi_video1.service: Failed with result 'exit-code'.
+Nis 01 17:49:02 utku2 systemd[1]: Failed to start Load/Save Screen Backlight Brightness of backlight:acpi_video1.
+Nis 01 17:49:02 utku2 systemd[1]: Started Load/Save Screen Backlight Brightness of backlight:amdgpu_bl0.
+Nis 01 17:49:03 utku2 systemd-udevd[269]: Process '/usr/bin/alsactl restore 0' failed with exit code 99.
+Nis 01 17:49:03 utku2 systemd-udevd[253]: Process '/usr/bin/alsactl restore 1' failed with exit code 99.
+Nis 01 17:49:04 utku2 systemd[1]: Started Flush Journal to Persistent Storage.
+Nis 01 17:49:04 utku2 systemd[1]: Starting Create Volatile Files and Directories...
+Nis 01 17:49:04 utku2 systemd[1]: Started Create Volatile Files and Directories.
+Nis 01 17:49:04 utku2 systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+Nis 01 17:49:04 utku2 systemd[1]: Starting Entropy Harvesting Daemon...
+Nis 01 17:49:05 utku2 systemd[1]: Started Update UTMP about System Boot/Shutdown.
+Nis 01 17:49:05 utku2 systemd[1]: Started Entropy Harvesting Daemon.
+Nis 01 17:49:05 utku2 systemd[1]: Reached target System Initialization.
+Nis 01 17:49:05 utku2 systemd[1]: Started Daily rotation of log files.
+Nis 01 17:49:05 utku2 systemd[1]: Started CUPS Scheduler.
+Nis 01 17:49:05 utku2 systemd[1]: Reached target Paths.
+Nis 01 17:49:05 utku2 systemd[1]: Started Daily verification of password and group files.
+Nis 01 17:49:05 utku2 systemd[1]: Starting Mark boot as indeterminate...
+Nis 01 17:49:05 utku2 systemd[1]: Listening on CUPS Scheduler.
+Nis 01 17:49:05 utku2 systemd[1]: Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+Nis 01 17:49:05 utku2 systemd[1]: Listening on D-Bus System Message Bus Socket.
+Nis 01 17:49:05 utku2 systemd[1]: Reached target Sockets.
+Nis 01 17:49:05 utku2 systemd[1]: Reached target Basic System.
+Nis 01 17:49:05 utku2 systemd[1]: Started Periodic Command Scheduler.
+Nis 01 17:49:05 utku2 systemd[1]: Condition check resulted in Save/Restore Sound Card State being skipped.
+Nis 01 17:49:07 utku2 haveged[675]: haveged: ver: 1.9.4; arch: x86; vend: ; build: (gcc 8.2.0 ITV); collect: 128K
+Nis 01 17:49:07 utku2 haveged[675]: haveged: cpu: (VC); data: 32K (V); inst: 96K (V); idx: 39/40; sz: 52825/52825
+Nis 01 17:49:07 utku2 haveged[675]: haveged: tot tests(BA8): A:1/1 B:1/1 continuous tests(B):  last entropy estimate 8.00034
+Nis 01 17:49:07 utku2 haveged[675]: haveged: fills: 0, generated: 0
+Nis 01 17:49:05 utku2 systemd[1]: Condition check resulted in Manage Sound Card State (restore and store) being skipped.
+Nis 01 17:49:05 utku2 systemd[1]: Reached target Sound Card.
+Nis 01 17:49:05 utku2 systemd[1]: Starting Bluetooth service...
+Nis 01 17:49:05 utku2 systemd[1]: Starting Avahi mDNS/DNS-SD Stack...
+Nis 01 17:49:05 utku2 systemd[1]: Started Daily locate database update.
+Nis 01 17:49:05 utku2 systemd[1]: Started Generate mirrorlist weekly.
+Nis 01 17:49:05 utku2 systemd[1]: Starting Modem Manager...
+Nis 01 17:49:05 utku2 systemd[1]: Started Monthly clean packages cache.
+Nis 01 17:49:05 utku2 systemd[1]: Started Daily man-db regeneration.
+Nis 01 17:49:05 utku2 systemd[1]: Starting Login Service...
+Nis 01 17:49:05 utku2 systemd[1]: Started Daily Cleanup of Temporary Directories.
+Nis 01 17:49:05 utku2 systemd[1]: Reached target Timers.
+Nis 01 17:49:05 utku2 systemd[1]: Starting Deferred execution scheduler...
+Nis 01 17:49:05 utku2 systemd[1]: Started D-Bus System Message Bus.
+Nis 01 17:49:05 utku2 systemd[1]: Starting Network Manager...
+Nis 01 17:49:05 utku2 systemd[1]: systemd-rfkill.service: Succeeded.
+Nis 01 17:49:07 utku2 systemd-logind[681]: New seat seat0.
+Nis 01 17:49:07 utku2 systemd-logind[681]: Watching system buttons on /dev/input/event8 (Power Button)
+Nis 01 17:49:07 utku2 systemd-logind[681]: Watching system buttons on /dev/input/event5 (Power Button)
+Nis 01 17:49:07 utku2 systemd-logind[681]: Watching system buttons on /dev/input/event7 (Lid Switch)
+Nis 01 17:49:07 utku2 systemd-logind[681]: Watching system buttons on /dev/input/event6 (Sleep Button)
+Nis 01 17:49:07 utku2 systemd-logind[681]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Nis 01 17:49:07 utku2 ModemManager[680]: <info>  ModemManager (version 1.10.0) starting in system bus...
+Nis 01 17:49:08 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 133 ret is 0 
+Nis 01 17:49:09 utku2 NetworkManager[684]: <info>  [1554130149.0483] NetworkManager (version 1.14.7dev+3+g353743b99-1) is starting... (for the first time)
+Nis 01 17:49:09 utku2 NetworkManager[684]: <info>  [1554130149.0486] Read config: /etc/NetworkManager/NetworkManager.conf (lib: 20-connectivity.conf)
+Nis 01 17:49:09 utku2 NetworkManager[684]: <info>  [1554130149.0872] wifi-nl80211: (wlp2s0): using nl80211 for WiFi device control
+Nis 01 17:49:09 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 306 ret is 0 
+Nis 01 17:49:09 utku2 systemd[1]: Started Login Service.
+Nis 01 17:49:09 utku2 systemd[1]: grub-boot-indeterminate.service: Succeeded.
+Nis 01 17:49:09 utku2 systemd[1]: Started Mark boot as indeterminate.
+Nis 01 17:49:09 utku2 systemd[1]: Started Deferred execution scheduler.
+Nis 01 17:49:09 utku2 NetworkManager[684]: <info>  [1554130149.4788] bus-manager: acquired D-Bus service "org.freedesktop.NetworkManager"
+Nis 01 17:49:09 utku2 systemd[1]: Started Bluetooth service.
+Nis 01 17:49:09 utku2 avahi-daemon[679]: Successfully dropped root privileges.
+Nis 01 17:49:09 utku2 avahi-daemon[679]: avahi-daemon 0.7 starting up.
+Nis 01 17:49:09 utku2 systemd[1]: Started Network Manager.
+Nis 01 17:49:09 utku2 systemd[1]: Reached target Network.
+Nis 01 17:49:09 utku2 systemd[1]: Starting Permit User Sessions...
+Nis 01 17:49:09 utku2 bluetoothd[678]: Starting SDP server
+Nis 01 17:49:09 utku2 systemd[1]: Started Folding@home distributed computing client.
+Nis 01 17:49:09 utku2 avahi-daemon[679]: Successfully called chroot().
+Nis 01 17:49:09 utku2 systemd[1]: Starting Network Manager Wait Online...
+Nis 01 17:49:09 utku2 avahi-daemon[679]: Successfully dropped remaining capabilities.
+Nis 01 17:49:09 utku2 systemd[1]: Started SixA Daemon service.
+Nis 01 17:49:09 utku2 dbus-daemon[683]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.4' (uid=0 pid=680 comm="/usr/bin/ModemManager ")
+Nis 01 17:49:09 utku2 NetworkManager[684]: <info>  [1554130149.4968] manager[0x5618888f1080]: monitoring kernel firmware directory '/lib/firmware'.
+Nis 01 17:49:09 utku2 dbus-daemon[683]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.5' (uid=0 pid=684 comm="/usr/bin/NetworkManager --no-daemon ")
+Nis 01 17:49:09 utku2 systemd[1]: Reached target Bluetooth.
+Nis 01 17:49:09 utku2 systemd[1]: Reached target Offline System Update (Pre).
+Nis 01 17:49:09 utku2 systemd[1]: Started Avahi mDNS/DNS-SD Stack.
+Nis 01 17:49:09 utku2 avahi-daemon[679]: No service file found in /etc/avahi/services.
+Nis 01 17:49:09 utku2 systemd[1]: Starting Hostname Service...
+Nis 01 17:49:09 utku2 systemd[1]: Starting Authorization Manager...
+Nis 01 17:49:09 utku2 avahi-daemon[679]: Network interface enumeration completed.
+Nis 01 17:49:09 utku2 avahi-daemon[679]: Server startup complete. Host name is utku2.local. Local service cookie is 913785928.
+Nis 01 17:49:09 utku2 systemd[1]: Started Permit User Sessions.
+Nis 01 17:49:09 utku2 systemd[1]: Starting Light Display Manager...
+Nis 01 17:49:09 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 306 ret is 0 
+Nis 01 17:49:10 utku2 kernel: Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Nis 01 17:49:10 utku2 kernel: Bluetooth: BNEP filters: protocol multicast
+Nis 01 17:49:10 utku2 kernel: Bluetooth: BNEP socket layer initialized
+Nis 01 17:49:10 utku2 bluetoothd[678]: Bluetooth management interface 1.14 initialized
+Nis 01 17:49:10 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 5e ret is 0 
+Nis 01 17:49:10 utku2 dbus-daemon[683]: [system] Activating via systemd: service name='org.freedesktop.Accounts' unit='accounts-daemon.service' requested by ':1.8' (uid=0 pid=710 comm="/usr/bin/lightdm ")
+Nis 01 17:49:10 utku2 systemd[1]: Reached target User and Group Name Lookups.
+Nis 01 17:49:10 utku2 systemd[1]: Starting Accounts Service...
+Nis 01 17:49:10 utku2 polkitd[707]: Started polkitd version 0.116
+Nis 01 17:49:10 utku2 sixad[704]: Can't read version info hci0: Network is down (100)
+Nis 01 17:49:10 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 5e ret is 0 
+Nis 01 17:49:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 145 ret is 0 
+Nis 01 17:49:12 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 145 ret is 0 
+Nis 01 17:49:12 utku2 systemd[1]: Reloading.
+Nis 01 17:49:12 utku2 systemd[1]: /usr/lib/systemd/system/teamviewerd.service:8: PIDFile= references path below legacy directory /var/run/, updating /var/run/teamviewerd.pid → /run/teamviewerd.pid; please update the unit file accordingly.
+Nis 01 17:49:12 utku2 systemd[1]: /usr/lib/systemd/system/smb.service:9: PIDFile= references path below legacy directory /var/run/, updating /var/run/smbd.pid → /run/smbd.pid; please update the unit file accordingly.
+Nis 01 17:49:12 utku2 systemd[1]: /usr/lib/systemd/system/winbind.service:8: PIDFile= references path below legacy directory /var/run/, updating /var/run/winbindd.pid → /run/winbindd.pid; please update the unit file accordingly.
+Nis 01 17:49:12 utku2 systemd[1]: /usr/lib/systemd/system/nmb.service:9: PIDFile= references path below legacy directory /var/run/, updating /var/run/nmbd.pid → /run/nmbd.pid; please update the unit file accordingly.
+Nis 01 17:49:12 utku2 bluetoothd[678]: Terminating
+Nis 01 17:49:12 utku2 systemd[1]: Stopping Bluetooth service...
+Nis 01 17:49:12 utku2 bluetoothd[678]: Stopping SDP server
+Nis 01 17:49:12 utku2 bluetoothd[678]: Exit
+Nis 01 17:49:13 utku2 systemd[1]: Reloading.
+Nis 01 17:49:13 utku2 systemd[1]: /usr/lib/systemd/system/teamviewerd.service:8: PIDFile= references path below legacy directory /var/run/, updating /var/run/teamviewerd.pid → /run/teamviewerd.pid; please update the unit file accordingly.
+Nis 01 17:49:13 utku2 systemd[1]: /usr/lib/systemd/system/smb.service:9: PIDFile= references path below legacy directory /var/run/, updating /var/run/smbd.pid → /run/smbd.pid; please update the unit file accordingly.
+Nis 01 17:49:13 utku2 systemd[1]: /usr/lib/systemd/system/winbind.service:8: PIDFile= references path below legacy directory /var/run/, updating /var/run/winbindd.pid → /run/winbindd.pid; please update the unit file accordingly.
+Nis 01 17:49:13 utku2 systemd[1]: /usr/lib/systemd/system/nmb.service:9: PIDFile= references path below legacy directory /var/run/, updating /var/run/nmbd.pid → /run/nmbd.pid; please update the unit file accordingly.
+Nis 01 17:49:13 utku2 sixad[704]: Watching... (5s)
+Nis 01 17:49:13 utku2 sixad[704]: sixad-bin[820]: started
+Nis 01 17:49:13 utku2 sixad-bin[820]: started
+Nis 01 17:49:13 utku2 kernel: Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+Nis 01 17:49:13 utku2 kernel: Bluetooth: HIDP socket layer initialized
+Nis 01 17:49:13 utku2 sixad[704]: sixad-bin[820]: sixad started, press the PS button now
+Nis 01 17:49:13 utku2 sixad-bin[820]: sixad started, press the PS button now
+Nis 01 17:49:13 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 146 ret is 0 
+Nis 01 17:49:13 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 146 ret is 0 
+Nis 01 17:49:14 utku2 polkitd[707]: Loading rules from directory /etc/polkit-1/rules.d
+Nis 01 17:49:14 utku2 polkitd[707]: Loading rules from directory /usr/share/polkit-1/rules.d
+Nis 01 17:49:14 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 148 ret is 0 
+Nis 01 17:49:14 utku2 polkitd[707]: Finished loading, compiling and executing 7 rules
+Nis 01 17:49:14 utku2 dbus-daemon[683]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Nis 01 17:49:14 utku2 systemd[1]: Started Authorization Manager.
+Nis 01 17:49:14 utku2 polkitd[707]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Nis 01 17:49:14 utku2 accounts-daemon[723]: started daemon version 0.6.54
+Nis 01 17:49:14 utku2 dbus-daemon[683]: [system] Successfully activated service 'org.freedesktop.Accounts'
+Nis 01 17:49:14 utku2 systemd[1]: Started Accounts Service.
+Nis 01 17:49:14 utku2 systemd[1]: bluetooth.service: Succeeded.
+Nis 01 17:49:14 utku2 systemd[1]: Stopped Bluetooth service.
+Nis 01 17:49:14 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 148 ret is 0 
+Nis 01 17:49:15 utku2 systemd[1]: Started Modem Manager.
+Nis 01 17:49:16 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 145 ret is 0 
+Nis 01 17:49:16 utku2 dbus-daemon[683]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Nis 01 17:49:16 utku2 systemd[1]: Started Hostname Service.
+Nis 01 17:49:16 utku2 NetworkManager[684]: <info>  [1554130156.2030] hostname: hostname: using hostnamed
+Nis 01 17:49:16 utku2 NetworkManager[684]: <info>  [1554130156.2031] hostname: hostname changed from (none) to "utku2"
+Nis 01 17:49:16 utku2 NetworkManager[684]: <info>  [1554130156.2034] dns-mgr[0x5618888fc8f0]: init: dns=default, rc-manager=symlink
+Nis 01 17:49:16 utku2 NetworkManager[684]: <info>  [1554130156.2047] rfkill2: found WiFi radio killswitch (at /sys/devices/pci0000:00/0000:00:02.3/0000:02:00.0/ieee80211/phy0/rfkill2) (driver iwlwifi)
+Nis 01 17:49:16 utku2 NetworkManager[684]: <info>  [1554130156.2050] rfkill0: found WiFi radio killswitch (at /sys/devices/platform/acer-wmi/rfkill/rfkill0) (platform driver acer-wmi)
+Nis 01 17:49:16 utku2 NetworkManager[684]: <info>  [1554130156.2590] manager[0x5618888f1080]: rfkill: WiFi hardware radio set enabled
+Nis 01 17:49:16 utku2 NetworkManager[684]: <info>  [1554130156.2591] manager[0x5618888f1080]: rfkill: WWAN hardware radio set enabled
+Nis 01 17:49:16 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 145 ret is 0 
+Nis 01 17:49:16 utku2 systemd[1]: Started Light Display Manager.
+Nis 01 17:49:16 utku2 dbus-daemon[683]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.5' (uid=0 pid=684 comm="/usr/bin/NetworkManager --no-daemon ")
+Nis 01 17:49:17 utku2 systemd[1]: Starting Network Manager Script Dispatcher Service...
+Nis 01 17:49:17 utku2 dbus-daemon[683]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Nis 01 17:49:17 utku2 systemd[1]: Started Network Manager Script Dispatcher Service.
+Nis 01 17:49:17 utku2 NetworkManager[684]: <info>  [1554130157.2121] settings: Loaded settings plugin: NMSKeyfilePlugin (internal)
+Nis 01 17:49:17 utku2 NetworkManager[684]: <info>  [1554130157.3745] settings: Loaded settings plugin: NMSIbftPlugin ("/usr/lib/NetworkManager/1.14.7dev+3+g353743b99-1/libnm-settings-plugin-ibft.so")
+Nis 01 17:49:17 utku2 NetworkManager[684]: <info>  [1554130157.4780] keyfile: new connection /etc/NetworkManager/system-connections/2300-FREE-WIFI.nmconnection (f073c71e-dabd-4d71-99e5-93c1450b3695,"2300-FREE-WIFI")
+Nis 01 17:49:17 utku2 NetworkManager[684]: <info>  [1554130157.5503] keyfile: new connection /etc/NetworkManager/system-connections/1417 1.nmconnection (4e8e55f1-f9bd-4b6a-a754-1548ecfe06b5,"1417 1")
+Nis 01 17:49:17 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 146 ret is 0 
+Nis 01 17:49:17 utku2 NetworkManager[684]: <info>  [1554130157.6174] keyfile: new connection /etc/NetworkManager/system-connections/*Ercan Havalimanı Free Wi-fi (ed009fb9-7fcb-4dd8-8e93-8a1eaf0ec742,"*Ercan Havalimanı Free Wi-fi")
+Nis 01 17:49:17 utku2 NetworkManager[684]: <info>  [1554130157.6363] keyfile: new connection /etc/NetworkManager/system-connections/HP-Print-3B-LaserJet Pro MFP (cf71f2cd-d529-4704-bf9a-fa11f8ddb658,"HP-Print-3B-LaserJet Pro MFP")
+Nis 01 17:49:17 utku2 NetworkManager[684]: <info>  [1554130157.6877] keyfile: new connection /etc/NetworkManager/system-connections/CIP_LOUNGE (30e2d4e0-5ada-42fe-80af-51d3def550ce,"CIP_LOUNGE")
+Nis 01 17:49:17 utku2 NetworkManager[684]: <info>  [1554130157.7332] keyfile: new connection /etc/NetworkManager/system-connections/TUFANEREN (cc76e6bc-7650-43a2-9c73-d31b46fda043,"TUFANEREN")
+Nis 01 17:49:17 utku2 NetworkManager[684]: <info>  [1554130157.7923] keyfile: new connection /etc/NetworkManager/system-connections/tuxutkuss3mini (5a62b2c7-a73c-48b8-b7d7-32c3431b50aa,"tuxutkuss3mini")
+Nis 01 17:49:17 utku2 NetworkManager[684]: <info>  [1554130157.8353] keyfile: new connection /etc/NetworkManager/system-connections/1218 (5b8f9f30-3a8d-41b7-a0ad-59835384da90,"1218")
+Nis 01 17:49:17 utku2 NetworkManager[684]: <info>  [1554130157.8534] keyfile: new connection /etc/NetworkManager/system-connections/Connectify-kuti (9d55565c-b290-4f88-b520-627f1eceff5f,"Connectify-kuti")
+Nis 01 17:49:17 utku2 NetworkManager[684]: <info>  [1554130157.9097] keyfile: new connection /etc/NetworkManager/system-connections/A2-AP1-KAMACIOGLU (d2abcd0f-f69d-47aa-9491-bdc58fc1cd5b,"A2-AP1-KAMACIOGLU")
+Nis 01 17:49:17 utku2 NetworkManager[684]: <info>  [1554130157.9579] keyfile: new connection /etc/NetworkManager/system-connections/dau-guest 1 (e54ccba3-3ca3-4853-ac8c-ed7c795370fa,"dau-guest 1")
+Nis 01 17:49:18 utku2 NetworkManager[684]: <info>  [1554130158.0025] keyfile: new connection /etc/NetworkManager/system-connections/ComtechAkdeniz-E8 (d0b1ae61-81e7-4c3f-a37a-f9b44ff295d6,"ComtechAkdeniz-E8")
+Nis 01 17:49:18 utku2 NetworkManager[684]: <info>  [1554130158.0627] keyfile: new connection /etc/NetworkManager/system-connections/Casper VIA_A1 (0bf66ae8-9926-4cd1-b3a2-af8b1f1f8a4c,"Casper VIA_A1")
+Nis 01 17:49:18 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 146 ret is 0 
+Nis 01 17:49:18 utku2 NetworkManager[684]: <info>  [1554130158.1057] keyfile: new connection /etc/NetworkManager/system-connections/EYUP AY TELEKOM 0326 606 0 345 (0b141ad2-b5be-4249-9d05-3d138f6ce8ee,"EYUP AY TELEKOM 0326 606 0 345")
+Nis 01 17:49:18 utku2 NetworkManager[684]: <info>  [1554130158.1552] keyfile: new connection /etc/NetworkManager/system-connections/Dlink 1 (63bc93a3-a4c9-41b1-88b7-3ac2801abc9e,"Dlink 1")
+Nis 01 17:49:18 utku2 NetworkManager[684]: <info>  [1554130158.2080] keyfile: new connection /etc/NetworkManager/system-connections/Dlink (aeb1090e-a3f6-4976-84ae-2e6c68d87b03,"Dlink")
+Nis 01 17:49:18 utku2 ModemManager[680]: <info>  Couldn't check support for device '/sys/devices/pci0000:00/0000:00:02.3/0000:02:00.0': not supported by any plugin
+Nis 01 17:49:18 utku2 NetworkManager[684]: <info>  [1554130158.5533] manager: rfkill: WiFi enabled by radio killswitch; enabled by state file
+Nis 01 17:49:18 utku2 NetworkManager[684]: <info>  [1554130158.5535] manager: rfkill: WWAN enabled by radio killswitch; enabled by state file
+Nis 01 17:49:18 utku2 NetworkManager[684]: <info>  [1554130158.5537] manager: Networking is enabled by state file
+Nis 01 17:49:18 utku2 NetworkManager[684]: <info>  [1554130158.5539] dhcp-init: Using DHCP client 'internal'
+Nis 01 17:49:18 utku2 nm-dispatcher[851]: req:1 'hostname': new request (0 scripts)
+Nis 01 17:49:18 utku2 nm-dispatcher[851]: req:1 'hostname': completed: no scripts
+Nis 01 17:49:18 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 189 ret is 0 
+Nis 01 17:49:18 utku2 NetworkManager[684]: <info>  [1554130158.7965] Loaded device plugin: NMBluezManager (/usr/lib/NetworkManager/1.14.7dev+3+g353743b99-1/libnm-device-plugin-bluetooth.so)
+Nis 01 17:49:18 utku2 NetworkManager[684]: <info>  [1554130158.8559] Loaded device plugin: NMAtmManager (/usr/lib/NetworkManager/1.14.7dev+3+g353743b99-1/libnm-device-plugin-adsl.so)
+Nis 01 17:49:18 utku2 NetworkManager[684]: <info>  [1554130158.8871] Loaded device plugin: NMOvsFactory (/usr/lib/NetworkManager/1.14.7dev+3+g353743b99-1/libnm-device-plugin-ovs.so)
+Nis 01 17:49:18 utku2 NetworkManager[684]: <info>  [1554130158.9233] Loaded device plugin: NMWwanFactory (/usr/lib/NetworkManager/1.14.7dev+3+g353743b99-1/libnm-device-plugin-wwan.so)
+Nis 01 17:49:19 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 189 ret is 0 
+Nis 01 17:49:19 utku2 NetworkManager[684]: <info>  [1554130159.5498] Loaded device plugin: NMTeamFactory (/usr/lib/NetworkManager/1.14.7dev+3+g353743b99-1/libnm-device-plugin-team.so)
+Nis 01 17:49:19 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 18b ret is 0 
+Nis 01 17:49:19 utku2 NetworkManager[684]: <info>  [1554130159.7170] Loaded device plugin: NMWifiFactory (/usr/lib/NetworkManager/1.14.7dev+3+g353743b99-1/libnm-device-plugin-wifi.so)
+Nis 01 17:49:19 utku2 NetworkManager[684]: <info>  [1554130159.7611] device (lo): carrier: link connected
+Nis 01 17:49:19 utku2 NetworkManager[684]: <info>  [1554130159.7615] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+Nis 01 17:49:19 utku2 NetworkManager[684]: <info>  [1554130159.7625] device (wlp2s0): driver supports Access Point (AP) mode
+Nis 01 17:49:19 utku2 NetworkManager[684]: <info>  [1554130159.7633] manager: (wlp2s0): new 802.11 WiFi device (/org/freedesktop/NetworkManager/Devices/2)
+Nis 01 17:49:19 utku2 kernel: IPv6: ADDRCONF(NETDEV_UP): wlp2s0: link is not ready
+Nis 01 17:49:19 utku2 NetworkManager[684]: <info>  [1554130159.7648] device (wlp2s0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Nis 01 17:49:19 utku2 kernel: IPv6: ADDRCONF(NETDEV_UP): wlp2s0: link is not ready
+Nis 01 17:49:19 utku2 NetworkManager[684]: <info>  [1554130159.8450] device (wlp2s0): set-hw-addr: set MAC address to CE:99:50:FF:C8:71 (scanning)
+Nis 01 17:49:19 utku2 kernel: IPv6: ADDRCONF(NETDEV_UP): wlp2s0: link is not ready
+Nis 01 17:49:20 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 18b ret is 0 
+Nis 01 17:49:20 utku2 dbus-daemon[683]: [system] Activating via systemd: service name='fi.w1.wpa_supplicant1' unit='wpa_supplicant.service' requested by ':1.5' (uid=0 pid=684 comm="/usr/bin/NetworkManager --no-daemon ")
+Nis 01 17:49:20 utku2 NetworkManager[684]: <info>  [1554130160.2612] ovsdb: Bağlanılamadı: Böyle bir dosya ya da dizin yok
+Nis 01 17:49:20 utku2 NetworkManager[684]: <info>  [1554130160.2616] modem-manager: ModemManager available
+Nis 01 17:49:20 utku2 systemd[1]: Starting WPA supplicant...
+Nis 01 17:49:20 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 18a ret is 0 
+Nis 01 17:49:21 utku2 dbus-daemon[683]: [system] Successfully activated service 'fi.w1.wpa_supplicant1'
+Nis 01 17:49:21 utku2 wpa_supplicant[877]: Successfully initialized wpa_supplicant
+Nis 01 17:49:21 utku2 systemd[1]: Started WPA supplicant.
+Nis 01 17:49:21 utku2 NetworkManager[684]: <info>  [1554130161.0569] supplicant: wpa_supplicant running
+Nis 01 17:49:21 utku2 NetworkManager[684]: <info>  [1554130161.0570] device (wlp2s0): supplicant interface state: init -> starting
+Nis 01 17:49:21 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 18a ret is 0 
+Nis 01 17:49:21 utku2 nm-dispatcher[851]: req:2 'connectivity-change': new request (0 scripts)
+Nis 01 17:49:21 utku2 nm-dispatcher[851]: req:2 'connectivity-change': completed: no scripts
+Nis 01 17:49:21 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 18c ret is 0 
+Nis 01 17:49:21 utku2 NetworkManager[684]: <info>  [1554130161.8793] sup-iface[0x5618888f40b0,wlp2s0]: supports 5 scan SSIDs
+Nis 01 17:49:21 utku2 NetworkManager[684]: <info>  [1554130161.8801] device (wlp2s0): supplicant interface state: starting -> ready
+Nis 01 17:49:21 utku2 NetworkManager[684]: <info>  [1554130161.8802] device (wlp2s0): state change: unavailable -> disconnected (reason 'supplicant-available', sys-iface-state: 'managed')
+Nis 01 17:49:21 utku2 kernel: IPv6: ADDRCONF(NETDEV_UP): wlp2s0: link is not ready
+Nis 01 17:49:22 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 18c ret is 0 
+Nis 01 17:49:23 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 145 ret is 0 
+Nis 01 17:49:23 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 145 ret is 0 
+Nis 01 17:49:24 utku2 FAHClient[702]: 14:49:24:ERROR:Exception: Failed to open '/opt/fah/config.xml': Failed to open '/opt/fah/config.xml': No such file or directory: iostream error: No such file or directory
+Nis 01 17:49:24 utku2 systemd[1]: foldingathome.service: Main process exited, code=exited, status=1/FAILURE
+Nis 01 17:49:24 utku2 systemd[1]: foldingathome.service: Failed with result 'exit-code'.
+Nis 01 17:49:24 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 146 ret is 0 
+Nis 01 17:49:25 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 146 ret is 0 
+Nis 01 17:49:25 utku2 NetworkManager[684]: <info>  [1554130165.3385] manager: startup complete
+Nis 01 17:49:25 utku2 systemd[1]: Started Network Manager Wait Online.
+Nis 01 17:49:25 utku2 systemd[1]: Reached target Network is Online.
+Nis 01 17:49:25 utku2 systemd[1]: Starting Samba NMB Daemon...
+Nis 01 17:49:25 utku2 systemd[1]: Starting TeamViewer remote control daemon...
+Nis 01 17:49:25 utku2 systemd[1]: Started Berkeley Open Infrastructure Network Computing Client.
+Nis 01 17:49:26 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:49:26 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:49:27 utku2 systemd[1]: teamviewerd.service: Can't open PID file /run/teamviewerd.pid (yet?) after start: No such file or directory
+Nis 01 17:49:27 utku2 systemd[1]: Started TeamViewer remote control daemon.
+Nis 01 17:49:27 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:49:27 utku2 systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Nis 01 17:49:28 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:49:29 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:49:29 utku2 nmbd[903]: [2019/04/01 17:49:29.369556,  0] ../lib/util/become_daemon.c:149(daemon_status)
+Nis 01 17:49:29 utku2 nmbd[903]:   daemon_status: STATUS=daemon 'nmbd' : No local IPv4 non-loopback interfaces available, waiting for interface ...
+Nis 01 17:49:29 utku2 nmbd[903]: [2019/04/01 17:49:29.429660,  0] ../source3/nmbd/nmbd_subnetdb.c:254(create_subnets)
+Nis 01 17:49:29 utku2 nmbd[903]:   NOTE: NetBIOS name resolution is not supported for Internet Protocol Version 6 (IPv6).
+Nis 01 17:49:29 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:49:30 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:49:31 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:49:31 utku2 kernel: amdgpu 0000:03:00.0: GPU pci config reset
+Nis 01 17:49:40 utku2 kernel: [drm] PCIE GART of 256M enabled (table at 0x000000F400040000).
+Nis 01 17:49:40 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 154 ret is 0 
+Nis 01 17:49:41 utku2 kernel: [drm:uvd_v6_0_enc_ring_test_ring [amdgpu]] *ERROR* amdgpu: ring 13 test failed
+Nis 01 17:49:41 utku2 kernel: [drm:amdgpu_device_ip_resume_phase2 [amdgpu]] *ERROR* resume of IP block <uvd_v6_0> failed -110
+Nis 01 17:49:41 utku2 kernel: [drm:amdgpu_device_resume [amdgpu]] *ERROR* amdgpu_device_ip_resume failed (-110).
+Nis 01 17:49:42 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 155 ret is 0 
+Nis 01 17:49:42 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 155 ret is 0 
+Nis 01 17:49:43 utku2 lightdm[1211]: pam_succeed_if(lightdm-autologin:auth): requirement "user ingroup autologin" was met by user "utku2"
+Nis 01 17:49:43 utku2 lightdm[1211]: gkr-pam: no password is available for user
+Nis 01 17:49:43 utku2 lightdm[1211]: pam_unix(lightdm-autologin:session): session opened for user utku2 by (uid=0)
+Nis 01 17:49:43 utku2 systemd[1]: Created slice User Slice of UID 1000.
+Nis 01 17:49:43 utku2 NetworkManager[684]: <info>  [1554130183.8246] policy: auto-activating connection '2300-FREE-WIFI' (f073c71e-dabd-4d71-99e5-93c1450b3695)
+Nis 01 17:49:43 utku2 systemd[1]: Starting User Runtime Directory /run/user/1000...
+Nis 01 17:49:43 utku2 NetworkManager[684]: <info>  [1554130183.8271] device (wlp2s0): Activation: starting connection '2300-FREE-WIFI' (f073c71e-dabd-4d71-99e5-93c1450b3695)
+Nis 01 17:49:43 utku2 NetworkManager[684]: <info>  [1554130183.8280] device (wlp2s0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Nis 01 17:49:43 utku2 NetworkManager[684]: <info>  [1554130183.8286] manager: NetworkManager state is now CONNECTING
+Nis 01 17:49:43 utku2 kernel: IPv6: ADDRCONF(NETDEV_UP): wlp2s0: link is not ready
+Nis 01 17:49:43 utku2 NetworkManager[684]: <info>  [1554130183.8301] device (wlp2s0): set-hw-addr: reset MAC address to 90:61:AE:30:14:39 (preserve)
+Nis 01 17:49:43 utku2 systemd-logind[681]: New session c1 of user utku2.
+Nis 01 17:49:43 utku2 NetworkManager[684]: <info>  [1554130183.8368] device (wlp2s0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Nis 01 17:49:43 utku2 NetworkManager[684]: <info>  [1554130183.8373] device (wlp2s0): Activation: (wifi) connection '2300-FREE-WIFI' requires no security.  No secrets needed.
+Nis 01 17:49:43 utku2 NetworkManager[684]: <info>  [1554130183.8374] Config: added 'ssid' value '2300-FREE-WIFI'
+Nis 01 17:49:43 utku2 NetworkManager[684]: <info>  [1554130183.8374] Config: added 'scan_ssid' value '1'
+Nis 01 17:49:43 utku2 NetworkManager[684]: <info>  [1554130183.8374] Config: added 'bgscan' value 'simple:30:-80:86400'
+Nis 01 17:49:43 utku2 NetworkManager[684]: <info>  [1554130183.8374] Config: added 'key_mgmt' value 'NONE'
+Nis 01 17:49:43 utku2 NetworkManager[684]: <info>  [1554130183.8607] device (wlp2s0): supplicant interface state: ready -> disconnected
+Nis 01 17:49:43 utku2 NetworkManager[684]: <info>  [1554130183.8624] device (wlp2s0): supplicant interface state: disconnected -> inactive
+Nis 01 17:49:43 utku2 systemd[1]: Started User Runtime Directory /run/user/1000.
+Nis 01 17:49:43 utku2 systemd[1]: Starting User Manager for UID 1000...
+Nis 01 17:49:43 utku2 NetworkManager[684]: <info>  [1554130183.9256] device (wlp2s0): supplicant interface state: inactive -> scanning
+Nis 01 17:49:43 utku2 systemd[1220]: pam_unix(systemd-user:session): session opened for user utku2 by (uid=0)
+Nis 01 17:49:44 utku2 wpa_supplicant[877]: wlp2s0: SME: Trying to authenticate with d4:6e:0e:76:d1:5a (SSID='2300-FREE-WIFI' freq=2412 MHz)
+Nis 01 17:49:44 utku2 kernel: wlp2s0: authenticate with d4:6e:0e:76:d1:5a
+Nis 01 17:49:44 utku2 kernel: wlp2s0: send auth to d4:6e:0e:76:d1:5a (try 1/3)
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.7722] device (wlp2s0): supplicant interface state: scanning -> authenticating
+Nis 01 17:49:44 utku2 kernel: wlp2s0: authenticated
+Nis 01 17:49:44 utku2 kernel: wlp2s0: associate with d4:6e:0e:76:d1:5a (try 1/3)
+Nis 01 17:49:44 utku2 wpa_supplicant[877]: wlp2s0: Trying to associate with d4:6e:0e:76:d1:5a (SSID='2300-FREE-WIFI' freq=2412 MHz)
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.7856] device (wlp2s0): supplicant interface state: authenticating -> associating
+Nis 01 17:49:44 utku2 kernel: wlp2s0: RX AssocResp from d4:6e:0e:76:d1:5a (capab=0x401 status=0 aid=2)
+Nis 01 17:49:44 utku2 wpa_supplicant[877]: RRM: Ignoring radio measurement request: Not associated
+Nis 01 17:49:44 utku2 kernel: wlp2s0: associated
+Nis 01 17:49:44 utku2 wpa_supplicant[877]: wlp2s0: Associated with d4:6e:0e:76:d1:5a
+Nis 01 17:49:44 utku2 wpa_supplicant[877]: wlp2s0: CTRL-EVENT-CONNECTED - Connection to d4:6e:0e:76:d1:5a completed [id=0 id_str=]
+Nis 01 17:49:44 utku2 kernel: IPv6: ADDRCONF(NETDEV_CHANGE): wlp2s0: link becomes ready
+Nis 01 17:49:44 utku2 wpa_supplicant[877]: wlp2s0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.7985] device (wlp2s0): supplicant interface state: associating -> completed
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.7986] device (wlp2s0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network "2300-FREE-WIFI"
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.7995] device (wlp2s0): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.8003] dhcp4 (wlp2s0): activation: beginning transaction (timeout in 45 seconds)
+Nis 01 17:49:44 utku2 wpa_supplicant[877]: wlp2s0: CTRL-EVENT-SIGNAL-CHANGE above=1 signal=-42 noise=9999 txrate=1000
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.8826] dhcp4 (wlp2s0):   address 10.10.25.5
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.8827] dhcp4 (wlp2s0):   plen 22
+Nis 01 17:49:44 utku2 avahi-daemon[679]: Joining mDNS multicast group on interface wlp2s0.IPv4 with address 10.10.25.5.
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.8827] dhcp4 (wlp2s0):   expires in 604800 seconds
+Nis 01 17:49:44 utku2 avahi-daemon[679]: New relevant interface wlp2s0.IPv4 for mDNS.
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.8828] dhcp4 (wlp2s0):   nameserver '194.27.73.15'
+Nis 01 17:49:44 utku2 avahi-daemon[679]: Registering new address record for 10.10.25.5 on wlp2s0.IPv4.
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.8828] dhcp4 (wlp2s0):   domain name 'mrtgdhcp.emu.edu.tr'
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.8828] dhcp4 (wlp2s0):   gateway 10.10.24.1
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.8831] dhcp4 (wlp2s0): state changed unknown -> bound
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.8848] device (wlp2s0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.8857] device (wlp2s0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.8860] device (wlp2s0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Nis 01 17:49:44 utku2 NetworkManager[684]: <info>  [1554130184.8866] manager: NetworkManager state is now CONNECTED_LOCAL
+Nis 01 17:49:45 utku2 NetworkManager[684]: <info>  [1554130185.1846] manager: NetworkManager state is now CONNECTED_SITE
+Nis 01 17:49:45 utku2 NetworkManager[684]: <info>  [1554130185.1849] policy: set '2300-FREE-WIFI' (wlp2s0) as default for IPv4 routing and DNS
+Nis 01 17:49:45 utku2 NetworkManager[684]: <info>  [1554130185.3215] device (wlp2s0): Activation: successful, device activated.
+Nis 01 17:49:45 utku2 dbus-daemon[683]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.5' (uid=0 pid=684 comm="/usr/bin/NetworkManager --no-daemon ")
+Nis 01 17:49:45 utku2 systemd[1]: Starting Network Manager Script Dispatcher Service...
+Nis 01 17:49:45 utku2 systemd[1]: Started Network Manager Script Dispatcher Service.
+Nis 01 17:49:45 utku2 dbus-daemon[683]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Nis 01 17:49:45 utku2 nm-dispatcher[1263]: req:1 'up' [wlp2s0]: new request (0 scripts)
+Nis 01 17:49:45 utku2 nm-dispatcher[1263]: req:1 'up' [wlp2s0]: completed: no scripts
+Nis 01 17:49:45 utku2 systemd[1220]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Nis 01 17:49:47 utku2 lightdm[710]: Error opening audit socket: Protocol not supported
+Nis 01 17:49:46 utku2 nm-dispatcher[1263]: req:2 'connectivity-change': new request (0 scripts)
+Nis 01 17:49:45 utku2 systemd[1220]: Starting D-Bus User Message Bus Socket.
+Nis 01 17:49:46 utku2 nm-dispatcher[1263]: req:2 'connectivity-change': completed: no scripts
+Nis 01 17:49:45 utku2 systemd[1220]: Reached target Paths.
+Nis 01 17:49:46 utku2 avahi-daemon[679]: Joining mDNS multicast group on interface wlp2s0.IPv6 with address fe80::840c:167e:fe81:947a.
+Nis 01 17:49:45 utku2 systemd[1220]: Listening on Multimedia System.
+Nis 01 17:49:46 utku2 avahi-daemon[679]: New relevant interface wlp2s0.IPv6 for mDNS.
+Nis 01 17:49:45 utku2 systemd[1220]: Listening on Sound System.
+Nis 01 17:49:46 utku2 avahi-daemon[679]: Registering new address record for fe80::840c:167e:fe81:947a on wlp2s0.*.
+Nis 01 17:49:45 utku2 systemd[1220]: Started Mark boot as successful after the user session has run 2 minutes.
+Nis 01 17:49:45 utku2 systemd[1220]: Reached target Timers.
+Nis 01 17:49:45 utku2 systemd[1220]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Nis 01 17:49:45 utku2 systemd[1220]: Listening on p11-kit server.
+Nis 01 17:49:45 utku2 systemd[1220]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Nis 01 17:49:45 utku2 systemd[1220]: Listening on GnuPG cryptographic agent and passphrase cache.
+Nis 01 17:49:45 utku2 systemd[1220]: Listening on GnuPG network certificate management daemon.
+Nis 01 17:49:45 utku2 systemd[1220]: Listening on D-Bus User Message Bus Socket.
+Nis 01 17:49:45 utku2 systemd[1220]: Reached target Sockets.
+Nis 01 17:49:45 utku2 systemd[1220]: Reached target Basic System.
+Nis 01 17:49:45 utku2 systemd[1]: Started User Manager for UID 1000.
+Nis 01 17:49:45 utku2 systemd[1220]: Starting Update XDG user dir configuration...
+Nis 01 17:49:45 utku2 systemd[1]: Started Session c1 of user utku2.
+Nis 01 17:49:46 utku2 systemd[1220]: xdg-user-dirs-update.service: Succeeded.
+Nis 01 17:49:46 utku2 systemd[1220]: Started Update XDG user dir configuration.
+Nis 01 17:49:46 utku2 systemd[1220]: Reached target Default.
+Nis 01 17:49:46 utku2 systemd[1220]: Startup finished in 1.980s.
+Nis 01 17:49:46 utku2 systemd[1]: systemd-hostnamed.service: Succeeded.
+Nis 01 17:49:46 utku2 NetworkManager[684]: <info>  [1554130186.3607] manager: NetworkManager state is now CONNECTED_GLOBAL
+Nis 01 17:49:47 utku2 systemd[1220]: Started D-Bus User Message Bus.
+Nis 01 17:49:47 utku2 NetworkManager[684]: <info>  [1554130187.5485] dhcp6 (wlp2s0): activation: beginning transaction (timeout in 45 seconds)
+Nis 01 17:49:47 utku2 NetworkManager[684]: <info>  [1554130187.5500] policy: set '2300-FREE-WIFI' (wlp2s0) as default for IPv6 routing and DNS
+Nis 01 17:49:49 utku2 nmbd[903]: [2019/04/01 17:49:49.490701,  0] ../lib/util/become_daemon.c:138(daemon_ready)
+Nis 01 17:49:49 utku2 nmbd[903]:   daemon_ready: STATUS=daemon 'nmbd' finished starting up and ready to serve connections
+Nis 01 17:49:49 utku2 systemd[1]: Started Samba NMB Daemon.
+Nis 01 17:49:49 utku2 systemd[1]: Starting Samba SMB Daemon...
+Nis 01 17:49:50 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Activating service name='org.xfce.Xfconf' requested by ':1.3' (uid=1000 pid=1293 comm="xfce4-session ")
+Nis 01 17:49:50 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Successfully activated service 'org.xfce.Xfconf'
+Nis 01 17:49:51 utku2 systemd[1220]: Started GnuPG cryptographic agent and passphrase cache.
+Nis 01 17:49:51 utku2 gpg-agent[1329]: gpg-agent (GnuPG) 2.2.13 starting in supervised mode.
+Nis 01 17:49:51 utku2 gpg-agent[1329]: using fd 3 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+Nis 01 17:49:51 utku2 gpg-agent[1329]: using fd 4 for browser socket (/run/user/1000/gnupg/S.gpg-agent.browser)
+Nis 01 17:49:51 utku2 gpg-agent[1329]: using fd 5 for std socket (/run/user/1000/gnupg/S.gpg-agent)
+Nis 01 17:49:51 utku2 gpg-agent[1329]: using fd 6 for extra socket (/run/user/1000/gnupg/S.gpg-agent.extra)
+Nis 01 17:49:51 utku2 gpg-agent[1329]: listening on: std=5 extra=6 browser=4 ssh=3
+Nis 01 17:49:53 utku2 systemd[1]: Started Samba SMB Daemon.
+Nis 01 17:49:53 utku2 systemd[1]: Reached target Multi-User System.
+Nis 01 17:49:53 utku2 systemd[1]: Starting TLP system startup/shutdown...
+Nis 01 17:49:53 utku2 systemd[1]: Reached target Graphical Interface.
+Nis 01 17:49:53 utku2 smbd[1297]: [2019/04/01 17:49:53.321456,  0] ../lib/util/become_daemon.c:138(daemon_ready)
+Nis 01 17:49:53 utku2 smbd[1297]:   daemon_ready: STATUS=daemon 'smbd' finished starting up and ready to serve connections
+Nis 01 17:49:53 utku2 kernel: ata1: exception Emask 0x40 SAct 0x0 SErr 0xc0800 action 0x7
+Nis 01 17:49:53 utku2 kernel: ata1: SError: { HostInt CommWake 10B8B }
+Nis 01 17:49:53 utku2 kernel: ata1: hard resetting link
+Nis 01 17:49:54 utku2 kernel: ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+Nis 01 17:49:54 utku2 kernel: ata1.00: configured for UDMA/133
+Nis 01 17:49:54 utku2 kernel: ata1: EH complete
+Nis 01 17:49:54 utku2 systemd[1]: Starting CUPS Scheduler...
+Nis 01 17:49:55 utku2 tlp[1345]: Applying power save settings...done.
+Nis 01 17:49:55 utku2 systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Nis 01 17:49:55 utku2 tlp[1345]: Setting battery charge thresholds...done.
+Nis 01 17:49:55 utku2 systemd[1]: Started TLP system startup/shutdown.
+Nis 01 17:49:57 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.9' (uid=1000 pid=1340 comm="Thunar --daemon ")
+Nis 01 17:49:57 utku2 systemd[1220]: Starting Virtual filesystem service...
+Nis 01 17:49:57 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:49:57 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:49:58 utku2 systemd[1]: Started CUPS Scheduler.
+Nis 01 17:49:58 utku2 systemd[1]: Startup finished in 5.252s (kernel) + 1min 18.216s (userspace) = 1min 23.468s.
+Nis 01 17:49:58 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:49:59 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:49:59 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Successfully activated service 'org.gtk.vfs.Daemon'
+Nis 01 17:49:59 utku2 systemd[1220]: Started Virtual filesystem service.
+Nis 01 17:50:00 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Activating service name='ca.desrt.dconf' requested by ':1.15' (uid=1000 pid=1661 comm="light-locker ")
+Nis 01 17:50:00 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:50:00 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:50:01 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Successfully activated service 'ca.desrt.dconf'
+Nis 01 17:50:01 utku2 kernel: fuse init (API version 7.26)
+Nis 01 17:50:01 utku2 systemd[1]: Mounting FUSE Control File System...
+Nis 01 17:50:01 utku2 systemd[1]: Mounted FUSE Control File System.
+Nis 01 17:50:01 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:50:02 utku2 systemd[1220]: Starting Sound Service...
+Nis 01 17:50:02 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:50:03 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:50:03 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Activating via systemd: service name='org.freedesktop.Notifications' unit='xfce4-notifyd.service' requested by ':1.19' (uid=1000 pid=1746 comm="notify-send VBoxClient: the VirtualBox kernel serv")
+Nis 01 17:50:03 utku2 systemd[1220]: Starting XFCE notifications service...
+Nis 01 17:50:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:50:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:50:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:50:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:50:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:50:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 281 ret is 0 
+Nis 01 17:50:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 281 ret is 0 
+Nis 01 17:50:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 133 ret is 0 
+Nis 01 17:50:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 133 ret is 0 
+Nis 01 17:50:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 306 ret is 0 
+Nis 01 17:50:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 306 ret is 0 
+Nis 01 17:50:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 5e ret is 0 
+Nis 01 17:50:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 5e ret is 0 
+Nis 01 17:50:03 utku2 systemd[1220]: Starting Accessibility services bus...
+Nis 01 17:50:03 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Activating via systemd: service name='org.a11y.Bus' unit='at-spi-dbus-bus.service' requested by ':1.20' (uid=1000 pid=1410 comm="nm-applet ")
+Nis 01 17:50:05 utku2 systemd[1]: Starting RealtimeKit Scheduling Policy Service...
+Nis 01 17:50:05 utku2 dbus-daemon[683]: [system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service' requested by ':1.51' (uid=1000 pid=1738 comm="/usr/bin/pulseaudio --daemonize=no ")
+Nis 01 17:50:06 utku2 systemd[1]: Started RealtimeKit Scheduling Policy Service.
+Nis 01 17:50:06 utku2 dbus-daemon[683]: [system] Successfully activated service 'org.freedesktop.RealtimeKit1'
+Nis 01 17:50:11 utku2 at-spi-bus-launcher[1750]: dbus-daemon[1780]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=1000 pid=1410 comm="nm-applet ")
+Nis 01 17:50:11 utku2 at-spi-bus-launcher[1750]: dbus-daemon[1780]: Successfully activated service 'org.a11y.atspi.Registry'
+Nis 01 17:50:08 utku2 systemd[1220]: Started Accessibility services bus.
+Nis 01 17:50:06 utku2 rtkit-daemon[1772]: Successfully called chroot.
+Nis 01 17:50:12 utku2 at-spi-bus-launcher[1750]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+Nis 01 17:50:09 utku2 NetworkManager[684]: <info>  [1554130209.7300] agent-manager: req[0x5618889bec40, :1.59/org.freedesktop.nm-applet/1000]: agent registered
+Nis 01 17:50:06 utku2 rtkit-daemon[1772]: Successfully dropped privileges.
+Nis 01 17:50:06 utku2 rtkit-daemon[1772]: Successfully limited resources.
+Nis 01 17:50:06 utku2 rtkit-daemon[1772]: Running.
+Nis 01 17:50:06 utku2 rtkit-daemon[1772]: Watchdog thread running.
+Nis 01 17:50:06 utku2 rtkit-daemon[1772]: Canary thread running.
+Nis 01 17:50:06 utku2 rtkit-daemon[1772]: Successfully made thread 1738 of process 1738 owned by '1000' high priority at nice level -11.
+Nis 01 17:50:06 utku2 rtkit-daemon[1772]: Supervising 1 threads of 1 processes of 1 users.
+Nis 01 17:50:08 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Successfully activated service 'org.a11y.Bus'
+Nis 01 17:50:08 utku2 polkitd[707]: Registered Authentication Agent for unix-session:c1 (system bus name :1.57 [/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale tr_TR.utf8)
+Nis 01 17:50:12 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 145 ret is 0 
+Nis 01 17:50:12 utku2 dbus-daemon[683]: [system] Activating via systemd: service name='org.manjaro.pamac.system' unit='pamac-system.service' requested by ':1.78' (uid=1000 pid=1686 comm="pamac-tray ")
+Nis 01 17:50:12 utku2 systemd[1]: Starting Pamac System Session...
+Nis 01 17:50:13 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 145 ret is 0 
+Nis 01 17:50:14 utku2 msm_notifier[1453]: qt5ct: using qt5ct plugin
+Nis 01 17:50:14 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 146 ret is 0 
+Nis 01 17:50:14 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 146 ret is 0 
+Nis 01 17:50:14 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Successfully activated service 'org.freedesktop.Notifications'
+Nis 01 17:50:14 utku2 systemd[1220]: Started XFCE notifications service.
+Nis 01 17:50:15 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 148 ret is 0 
+Nis 01 17:50:15 utku2 rtkit-daemon[1772]: Supervising 1 threads of 1 processes of 1 users.
+Nis 01 17:50:15 utku2 rtkit-daemon[1772]: Successfully made thread 1849 of process 1738 owned by '1000' RT at priority 5.
+Nis 01 17:50:15 utku2 rtkit-daemon[1772]: Supervising 2 threads of 1 processes of 1 users.
+Nis 01 17:50:15 utku2 rtkit-daemon[1772]: Supervising 2 threads of 1 processes of 1 users.
+Nis 01 17:50:15 utku2 rtkit-daemon[1772]: Successfully made thread 1850 of process 1738 owned by '1000' RT at priority 5.
+Nis 01 17:50:15 utku2 rtkit-daemon[1772]: Supervising 3 threads of 1 processes of 1 users.
+Nis 01 17:50:15 utku2 dbus-daemon[683]: [system] Successfully activated service 'org.manjaro.pamac.system'
+Nis 01 17:50:15 utku2 systemd[1]: Started Pamac System Session.
+Nis 01 17:50:15 utku2 systemd[1]: pamac-system.service: Succeeded.
+Nis 01 17:50:15 utku2 dbus-daemon[683]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.84' (uid=1000 pid=1738 comm="/usr/bin/pulseaudio --daemonize=no ")
+Nis 01 17:50:15 utku2 dbus-daemon[683]: [system] Activation via systemd failed for unit 'dbus-org.bluez.service': Unit dbus-org.bluez.service not found.
+Nis 01 17:50:15 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 148 ret is 0 
+Nis 01 17:50:16 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 145 ret is 0 
+Nis 01 17:50:17 utku2 systemd[1220]: Started Sound Service.
+Nis 01 17:50:17 utku2 pulseaudio[1738]: E: [pulseaudio] bluez5-util.c: GetManagedObjects() failed: org.freedesktop.systemd1.NoSuchUnit: Unit dbus-org.bluez.service not found.
+Nis 01 17:50:17 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 145 ret is 0 
+Nis 01 17:50:18 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 146 ret is 0 
+Nis 01 17:50:18 utku2 msm_notifier[1453]: qt5ct: D-Bus system tray: no
+Nis 01 17:50:18 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 146 ret is 0 
+Nis 01 17:50:19 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 189 ret is 0 
+Nis 01 17:50:19 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 189 ret is 0 
+Nis 01 17:50:20 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 18b ret is 0 
+Nis 01 17:50:20 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 18b ret is 0 
+Nis 01 17:50:21 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 18a ret is 0 
+Nis 01 17:50:21 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 18a ret is 0 
+Nis 01 17:50:22 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 18c ret is 0 
+Nis 01 17:50:22 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 18c ret is 0 
+Nis 01 17:50:23 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 145 ret is 0 
+Nis 01 17:50:24 utku2 dbus-daemon[683]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.89' (uid=1000 pid=1504 comm="python /usr/bin/blueman-applet ")
+Nis 01 17:50:24 utku2 dbus-daemon[683]: [system] Activation via systemd failed for unit 'dbus-org.bluez.service': Unit dbus-org.bluez.service not found.
+Nis 01 17:50:24 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 145 ret is 0 
+Nis 01 17:50:25 utku2 dbus-daemon[683]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.90' (uid=1000 pid=1454 comm="/usr/share/skypeforlinux/skypeforlinux --executed-")
+Nis 01 17:50:26 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 146 ret is 0 
+Nis 01 17:50:26 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 146 ret is 0 
+Nis 01 17:50:32 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:50:32 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:50:32 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:50:32 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:50:32 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:50:32 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:50:32 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:50:32 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:50:25 utku2 dbus-daemon[683]: [system] Activation via systemd failed for unit 'dbus-org.bluez.service': Unit dbus-org.bluez.service not found.
+Nis 01 17:50:30 utku2 systemd[1220]: Starting Virtual filesystem service - disk device monitor...
+Nis 01 17:50:26 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Activating service name='org.freedesktop.thumbnails.Thumbnailer1' requested by ':1.13' (uid=1000 pid=1342 comm="xfdesktop ")
+Nis 01 17:50:30 utku2 systemd[1]: Starting Disk Manager...
+Nis 01 17:50:30 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Activating via systemd: service name='org.gtk.vfs.UDisks2VolumeMonitor' unit='gvfs-udisks2-volume-monitor.service' requested by ':1.49' (uid=1000 pid=1921 comm="/usr/lib/tumbler-1/tumblerd ")
+Nis 01 17:50:32 utku2 org.freedesktop.thumbnails.Thumbnailer1[1285]: Registered thumbailer /usr/bin/gdk-pixbuf-thumbnailer -s %s %u %o
+Nis 01 17:50:32 utku2 org.freedesktop.thumbnails.Thumbnailer1[1285]: Registered thumbailer gsf-office-thumbnailer -i %i -o %o -s %s
+Nis 01 17:50:32 utku2 org.freedesktop.thumbnails.Thumbnailer1[1285]: Registered thumbailer ffmpegthumbnailer -i %i -o %o -s %s -f
+Nis 01 17:50:32 utku2 org.freedesktop.thumbnails.Thumbnailer1[1285]: Registered thumbailer /usr/bin/xplayer-video-thumbnailer -s %s %u %o
+Nis 01 17:50:32 utku2 org.freedesktop.thumbnails.Thumbnailer1[1285]: Registered thumbailer heif-thumbnailer -s %s %i %o
+Nis 01 17:50:32 utku2 org.freedesktop.thumbnails.Thumbnailer1[1285]: Registered thumbailer /usr/bin/gdk-pixbuf-thumbnailer -s %s %u %o
+Nis 01 17:50:30 utku2 udisksd[1998]: udisks daemon version 2.8.2 starting
+Nis 01 17:50:30 utku2 dbus-daemon[683]: [system] Activating via systemd: service name='org.freedesktop.UDisks2' unit='udisks2.service' requested by ':1.92' (uid=1000 pid=1995 comm="/usr/lib/gvfs-udisks2-volume-monitor ")
+Nis 01 17:50:32 utku2 kernel: amdgpu 0000:03:00.0: GPU pci config reset
+Nis 01 17:50:32 utku2 dbus-daemon[683]: [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service' requested by ':1.94' (uid=1000 pid=2005 comm="xfce4-power-manager ")
+Nis 01 17:50:32 utku2 systemd[1]: Starting Daemon for power management...
+Nis 01 17:50:32 utku2 NetworkManager[684]: <warn>  [1554130232.8888] dhcp6 (wlp2s0): request timed out
+Nis 01 17:50:32 utku2 NetworkManager[684]: <info>  [1554130232.8888] dhcp6 (wlp2s0): state changed unknown -> timeout
+Nis 01 17:50:32 utku2 NetworkManager[684]: <info>  [1554130232.8889] dhcp6 (wlp2s0): canceled DHCP transaction
+Nis 01 17:50:32 utku2 NetworkManager[684]: <info>  [1554130232.8890] dhcp6 (wlp2s0): state changed timeout -> done
+Nis 01 17:50:33 utku2 dbus-daemon[683]: [system] Successfully activated service 'org.freedesktop.UDisks2'
+Nis 01 17:50:33 utku2 systemd[1]: Started Disk Manager.
+Nis 01 17:50:33 utku2 udisksd[1998]: Acquired the name org.freedesktop.UDisks2 on the system message bus
+Nis 01 17:50:33 utku2 systemd-logind[681]: Cannot find the ESP partition mount point.
+Nis 01 17:50:34 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Successfully activated service 'org.gtk.vfs.UDisks2VolumeMonitor'
+Nis 01 17:50:34 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Activating via systemd: service name='org.gtk.vfs.AfcVolumeMonitor' unit='gvfs-afc-volume-monitor.service' requested by ':1.49' (uid=1000 pid=1921 comm="/usr/lib/tumbler-1/tumblerd ")
+Nis 01 17:50:34 utku2 systemd[1220]: Started Virtual filesystem service - disk device monitor.
+Nis 01 17:50:34 utku2 systemd[1220]: Starting Virtual filesystem service - Apple File Conduit monitor...
+Nis 01 17:50:34 utku2 gvfs-afc-volume-monitor[2034]: Volume monitor alive
+Nis 01 17:50:34 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Successfully activated service 'org.gtk.vfs.AfcVolumeMonitor'
+Nis 01 17:50:34 utku2 systemd[1220]: Started Virtual filesystem service - Apple File Conduit monitor.
+Nis 01 17:50:34 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Activating via systemd: service name='org.gtk.vfs.GPhoto2VolumeMonitor' unit='gvfs-gphoto2-volume-monitor.service' requested by ':1.49' (uid=1000 pid=1921 comm="/usr/lib/tumbler-1/tumblerd ")
+Nis 01 17:50:34 utku2 systemd[1220]: Starting Virtual filesystem service - digital camera monitor...
+Nis 01 17:50:34 utku2 dbus-daemon[683]: [system] Successfully activated service 'org.freedesktop.UPower'
+Nis 01 17:50:34 utku2 systemd[1]: Started Daemon for power management.
+Nis 01 17:50:34 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Successfully activated service 'org.gtk.vfs.GPhoto2VolumeMonitor'
+Nis 01 17:50:34 utku2 systemd[1220]: Started Virtual filesystem service - digital camera monitor.
+Nis 01 17:50:34 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Activating via systemd: service name='org.gtk.vfs.MTPVolumeMonitor' unit='gvfs-mtp-volume-monitor.service' requested by ':1.49' (uid=1000 pid=1921 comm="/usr/lib/tumbler-1/tumblerd ")
+Nis 01 17:50:34 utku2 systemd[1220]: Starting Virtual filesystem service - Media Transfer Protocol monitor...
+Nis 01 17:50:34 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Successfully activated service 'org.gtk.vfs.MTPVolumeMonitor'
+Nis 01 17:50:34 utku2 systemd[1220]: Started Virtual filesystem service - Media Transfer Protocol monitor.
+Nis 01 17:50:34 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Successfully activated service 'org.freedesktop.thumbnails.Thumbnailer1'
+Nis 01 17:50:35 utku2 pkexec[2078]: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Nis 01 17:50:35 utku2 pkexec[2078]: utku2: Executing command [USER=root] [TTY=unknown] [CWD=/] [COMMAND=/usr/bin/xfpm-power-backlight-helper --set-brightness-switch 0]
+Nis 01 17:50:36 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Activating via systemd: service name='org.gtk.vfs.Metadata' unit='gvfs-metadata.service' requested by ':1.13' (uid=1000 pid=1342 comm="xfdesktop ")
+Nis 01 17:50:36 utku2 systemd[1220]: Starting Virtual filesystem metadata service...
+Nis 01 17:50:36 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Successfully activated service 'org.gtk.vfs.Metadata'
+Nis 01 17:50:36 utku2 systemd[1220]: Started Virtual filesystem metadata service.
+Nis 01 17:50:49 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Activating service name='org.freedesktop.secrets' requested by ':1.32' (uid=1000 pid=1454 comm="/usr/share/skypeforlinux/skypeforlinux --executed-")
+Nis 01 17:50:50 utku2 dbus-daemon[1285]: [session uid=1000 pid=1285] Successfully activated service 'org.freedesktop.secrets'
+Nis 01 17:51:21 utku2 msm_notifier[1453]: "qt5-translations"
+Nis 01 17:51:37 utku2 boinc[905]: 01-Apr-2019 17:51:37 [---] Starting BOINC client version 7.12.1 for x86_64-pc-linux-gnu
+Nis 01 17:51:37 utku2 boinc[905]: 01-Apr-2019 17:51:37 [---] log flags: file_xfer, sched_ops, task
+Nis 01 17:51:37 utku2 boinc[905]: 01-Apr-2019 17:51:37 [---] Libraries: libcurl/7.64.0 OpenSSL/1.1.1b zlib/1.2.11 libidn2/2.1.1 libpsl/0.20.2 (+libidn2/2.1.1) libssh2/1.8.0 nghttp2/1.36.0
+Nis 01 17:51:37 utku2 boinc[905]: 01-Apr-2019 17:51:37 [---] Data directory: /var/lib/boinc
+Nis 01 17:51:37 utku2 kernel: [drm] PCIE GART of 256M enabled (table at 0x000000F400040000).
+Nis 01 17:51:38 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 154 ret is 0 
+Nis 01 17:51:38 utku2 kernel: [drm:uvd_v6_0_enc_ring_test_ring [amdgpu]] *ERROR* amdgpu: ring 13 test failed
+Nis 01 17:51:38 utku2 kernel: [drm:amdgpu_device_ip_resume_phase2 [amdgpu]] *ERROR* resume of IP block <uvd_v6_0> failed -110
+Nis 01 17:51:38 utku2 kernel: [drm:amdgpu_device_resume [amdgpu]] *ERROR* amdgpu_device_ip_resume failed (-110).
+Nis 01 17:51:40 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 155 ret is 0 
+Nis 01 17:51:40 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 155 ret is 0 
+Nis 01 17:51:46 utku2 boinc[905]: 01-Apr-2019 17:51:46 [---] OpenCL: AMD/ATI GPU 0: AMD Radeon Graphics (driver version 2766.4, device version OpenCL 1.2 AMD-APP (2766.4), 2526MB, 2526MB available, 581 GFLOPS peak)
+Nis 01 17:51:46 utku2 boinc[905]: 01-Apr-2019 17:51:46 [---] OpenCL: AMD/ATI GPU 1: Radeon 500 Series (driver version 2766.4, device version OpenCL 1.2 AMD-APP (2766.4), 2042MB, 2042MB available, 1071 GFLOPS peak)
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] [libc detection] gathered: 2.28, GNU libc
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Host name: utku2
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Processor: 4 AuthenticAMD AMD A10-9620P RADEON R5, 10 COMPUTE CORES 4C+6G [Family 21 Model 101 Stepping 1]
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Processor features: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good acc_power nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs xop skinit wdt lwp fma4 tce nodeid_msr tbm topoext perfctr_core perfctr_nb bpext ptsc mwaitx cpb hw_pstate vmmcall fsgsbase bmi1 avx2 smep bmi2 xsaveopt ibpb arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic vgif overflow_recov
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] OS: Linux ManjaroLinux: Manjaro Linux [4.16.0-rc1-MANJARO|libc 2.28 (GNU libc)]
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Memory: 6.83 GB physical, 4.00 GB virtual
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Disk: 125.13 GB total, 6.02 GB free
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Local time is UTC +3 hours
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Config: use all coprocessors
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [Asteroids@home] URL http://asteroidsathome.net/boinc/; Computer ID 561149; resource share 100
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [Asteroids@home] Your current settings do not allow tasks from this project.  To fix this, you can change Project Preferences on the project's web site.
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [collatz] URL https://boinc.thesonntags.com/collatz/; Computer ID 838354; resource share 100
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] General prefs: from http://www.worldcommunitygrid.org/ (last modified 28-Jul-2018 18:58:06)
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Host location: none
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] General prefs: using your defaults
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Reading preferences override file
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Preferences:
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---]    max memory usage when active: 3497.47 MB
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---]    max memory usage when idle: 6295.45 MB
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---]    max disk usage: 5.92 GB
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---]    (to change preferences, visit a project web site or select Preferences in the Manager)
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Setting up project and slot directories
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Checking active tasks
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Setting up GUI RPC socket
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Checking presence of 8 project files
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 Initialization completed
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [---] Suspending computation - user request
+Nis 01 17:51:47 utku2 boinc[905]: 01-Apr-2019 17:51:47 [collatz] Fetching scheduler list
+Nis 01 17:51:54 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:51:54 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:51:55 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:51:56 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:51:57 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:51:57 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:51:58 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:51:59 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:52:00 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:52:00 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:52:01 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:52:02 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:52:03 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:52:03 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:52:04 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 281 ret is 0 
+Nis 01 17:52:04 utku2 systemd[1220]: Starting Mark boot as successful...
+Nis 01 17:52:04 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 281 ret is 0 
+Nis 01 17:52:04 utku2 systemd[1220]: grub-boot-success.service: Succeeded.
+Nis 01 17:52:04 utku2 systemd[1220]: Started Mark boot as successful.
+Nis 01 17:52:05 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 133 ret is 0 
+Nis 01 17:52:05 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 133 ret is 0 
+Nis 01 17:52:06 utku2 kernel: [drm:amdgpu_job_timedout [amdgpu]] *ERROR* ring gfx timeout, last signaled seq=671, last emitted seq=671
+Nis 01 17:52:06 utku2 kernel: [drm] No hardware hang detected. Did some blocks stall?
+Nis 01 17:52:06 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 306 ret is 0 
+Nis 01 17:52:07 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 306 ret is 0 
+Nis 01 17:52:07 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 5e ret is 0 
+Nis 01 17:52:08 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 5e ret is 0 
+Nis 01 17:52:09 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 145 ret is 0 
+Nis 01 17:52:09 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 145 ret is 0 
+Nis 01 17:52:10 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 146 ret is 0 
+Nis 01 17:52:10 utku2 kernel: [drm:amdgpu_job_timedout [amdgpu]] *ERROR* ring sdma1 timeout, last signaled seq=276, last emitted seq=276
+Nis 01 17:52:10 utku2 kernel: [drm:amdgpu_job_timedout [amdgpu]] *ERROR* ring sdma0 timeout, last signaled seq=456, last emitted seq=456
+Nis 01 17:52:10 utku2 kernel: [drm] No hardware hang detected. Did some blocks stall?
+Nis 01 17:52:10 utku2 kernel: [drm] No hardware hang detected. Did some blocks stall?
+Nis 01 17:52:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 146 ret is 0 
+Nis 01 17:52:11 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 148 ret is 0 
+Nis 01 17:52:12 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 148 ret is 0 
+Nis 01 17:52:13 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 145 ret is 0 
+Nis 01 17:52:13 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 145 ret is 0 
+Nis 01 17:52:14 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 146 ret is 0 
+Nis 01 17:52:15 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 146 ret is 0 
+Nis 01 17:52:15 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 189 ret is 0 
+Nis 01 17:52:16 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 189 ret is 0 
+Nis 01 17:52:16 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 18b ret is 0 
+Nis 01 17:52:17 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 18b ret is 0 
+Nis 01 17:52:17 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 18a ret is 0 
+Nis 01 17:52:18 utku2 boinc[905]: 01-Apr-2019 17:52:18 [---] Project communication failed: attempting access to reference site
+Nis 01 17:52:18 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 18a ret is 0 
+Nis 01 17:52:18 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 18c ret is 0 
+Nis 01 17:52:19 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 18c ret is 0 
+Nis 01 17:52:20 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 145 ret is 0 
+Nis 01 17:52:20 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 145 ret is 0 
+Nis 01 17:52:21 utku2 boinc[905]: 01-Apr-2019 17:52:21 [---] Internet access OK - project servers may be temporarily down.
+Nis 01 17:52:22 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 146 ret is 0 
+Nis 01 17:52:22 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 146 ret is 0 
+Nis 01 17:52:23 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:52:24 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:52:25 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:52:25 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:52:26 utku2 kernel: [drm:amdgpu_job_timedout [amdgpu]] *ERROR* ring sdma0 timeout, last signaled seq=756, last emitted seq=756
+Nis 01 17:52:26 utku2 kernel: [drm] No hardware hang detected. Did some blocks stall?
+Nis 01 17:52:26 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:52:27 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:52:28 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send pre message 261 ret is 0 
+Nis 01 17:52:28 utku2 kernel: amdgpu: [powerplay] 
+                               failed to send message 261 ret is 0 
+Nis 01 17:52:28 utku2 kernel: amdgpu 0000:03:00.0: GPU pci config reset
