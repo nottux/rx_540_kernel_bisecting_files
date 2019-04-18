@@ -1,0 +1,1 @@
+Plugging ac adapter couses "default" monitor to attached/detect with resolution of 1368x768
