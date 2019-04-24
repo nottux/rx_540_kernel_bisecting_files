@@ -1,0 +1,3 @@
+after [  744.622203] amdgpu 0000:03:00.0: GPU pci config reset i run a opengl game on discrete graphics and i had to close the game, but system is overall very stable, running non-vulkan aps and running aps with integrated carrizo gpu doesn't cause any issues. However running even glxgears on discrete graphics post some error messages on dmesg, running vulkan-cube again slowsdown the system but doesn't crash it as it used to be.
+dmesg message on dmesg.txt
+journalctl -b0 on journalctl.txt
